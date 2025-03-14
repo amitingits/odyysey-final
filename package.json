@@ -8,12 +8,11 @@
     "build": "vite build",
     "lint": "eslint .",
     "preview": "vite preview"
-
   },
   "dependencies": {
     "@tailwindcss/vite": "^4.0.14",
     "framer-motion": "^12.5.0",
-    "localtunnel": "^2.0.2",
+    "localtunnel": "^1.8.3",
     "lucide-react": "^0.479.0",
     "react": "^19.0.0",
     "react-dom": "^19.0.0",
