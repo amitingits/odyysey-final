@@ -1,3 +1,3 @@
 export default function Timeline() {
-  return <div>Timeline and schedule Biswa</div>;
+  return <div id="timeline">Timeline and schedule Biswa</div>;
 }

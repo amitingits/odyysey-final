@@ -10,6 +10,7 @@ html {
   --border-color: #c7acef;
   --link-color: #8856de;
   --border-radius: 12px;
+  scroll-behavior: smooth;
 }
 
 body {

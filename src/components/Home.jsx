@@ -6,14 +6,16 @@ import triangleman from "../assets/triangle-man.svg";
 import { useState, useEffect } from "react";
 
 export default function Home() {
-  const [daysInput, setDaysInput] = useState(10); // Default value
+  function formatNumber(num) {
+    return String(num).padStart(2, "0");
+  }
   const [timeLeft, setTimeLeft] = useState({
     days: 0,
     hours: 0,
     minutes: 0,
     seconds: 0,
   });
-  const targetTime = new Date("April 4, 2025 00:00:00").getTime();
+  const targetTime = new Date("April 4, 2025 10:30:00").getTime();
   useEffect(() => {
     if (!targetTime) return;
 
@@ -82,17 +84,17 @@ export default function Home() {
       <div className=" absolute timer bottom-30  justify-center">
         <table className="justify-items-center  mx-auto font-bold">
           <tr className="justify-items-center  ">
-            <td className=" justify-items-center  text-4xl number">
-              {timeLeft.days}
+            <td className=" justify-items-center  text-4xl ">
+              {formatNumber(timeLeft.days)}
             </td>
-            <td className=" justify-items-center text-4xl number">
-              {timeLeft.minutes}
+            <td className=" justify-items-center text-4xl ">
+              {formatNumber(timeLeft.minutes)}
             </td>
-            <td className=" justify-items-center text-4xl number">
-              {timeLeft.minutes}
+            <td className=" justify-items-center text-4xl ">
+              {formatNumber(timeLeft.minutes)}
             </td>
-            <td className=" justify-items-center text-4xl number">
-              {timeLeft.seconds}
+            <td className=" justify-items-center text-4xl ">
+              {formatNumber(timeLeft.seconds)}
             </td>
           </tr>
           <tr className="justify-items-center ">

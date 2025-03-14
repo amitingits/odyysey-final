@@ -1,3 +1,3 @@
 export default function Games() {
-  return <>Games by prajakta</>;
+  return <div id="game">Games by prajakta</div>;
 }

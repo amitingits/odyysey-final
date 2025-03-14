@@ -11,13 +11,13 @@ export default function Navbar() {
             <a href="#home">Home</a>
           </li>
           <li>
-            <a href="#">Games</a>
+            <a href="#game">Games</a>
           </li>
           <li>
-            <a href="#">Speakers</a>
+            <a href="#speaker">Speakers</a>
           </li>
           <li>
-            <a href="#">Schedule</a>
+            <a href="#timeline">Schedule</a>
           </li>
           <li>
             <a href="#sponsor">Partners & Sponsors</a>
