@@ -10,10 +10,10 @@ function App() {
   return (
     <>
       <Navbar />
-      <Home /> {/* KArtik will do this */}
+      {/* <Home />  */}
       <Games />
-      <Speakers />
-      <Timeline />
+      {/* <Speakers /> */}
+      {/* <Timeline /> */}
       <Sponsors />
     </>
   );

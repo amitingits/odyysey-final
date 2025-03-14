@@ -1,3 +1,11 @@
+import ActiveSlider from "./ActiveSlider";
+
 export default function Sponsors() {
-  return <div>Sponsor and community by me</div>;
+  return (
+    <>
+      <div className="sponsor flex justify-center ">Sponsor and community</div>
+      <ActiveSlider direction="left" />
+      <ActiveSlider direction="right" />
+    </>
+  );
 }
