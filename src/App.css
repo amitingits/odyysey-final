@@ -1,0 +1,54 @@
+@import "tailwindcss";
+
+html {
+  --base-color: #000000;
+  --second-base-color: #476bd0;
+  --primary-color: #efeefc;
+  --button-color: #6d28d9;
+  --border-color: #c7acef;
+  --link-color: #8856de;
+  --border-radius: 12px;
+}
+
+body {
+  background-color: var(--base-color);
+  font-family: "Lexend", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+  color: var(--primary-color);
+}
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+.navbar {
+  background-color: #2c2c2c;
+  padding: 10px 20px;
+  gap: 24px;
+  border-radius: 60px;
+}
+
+.navbar-menu {
+  list-style: none;
+  display: flex;
+  justify-content: space-around;
+  margin: 0;
+  padding: 0;
+}
+
+.navbar-menu li {
+  margin: 0 15px;
+}
+
+.navbar-menu a {
+  color: #ffffff;
+  text-decoration: none;
+  font-size: 16px;
+  transition: color 0.3s;
+}
+
+.navbar-menu a:hover {
+  color: #ffcc00; /* Change this color on hover */
+}
