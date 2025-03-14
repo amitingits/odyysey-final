@@ -1,4 +1,4 @@
-import SpeakerComponent from "./speakerComponent";
+import SpeakerComponent from "./SpeakerComponent.jsx";
 import speakersData from "./speakerData.js";
 
 export default function Speakers() {
