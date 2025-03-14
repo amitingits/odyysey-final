@@ -1,6 +1,6 @@
-@import "tailwindcss";
-
 @import url("https://fonts.cdnfonts.com/css/game-of-squids");
+@import url("https://fonts.cdnfonts.com/css/digital-numbers");
+@import "tailwindcss";
 
 html {
   --base-color: #000000;
@@ -26,7 +26,6 @@ body {
 }
 
 .navbar {
-  background-color: #2c2c2c;
   padding: 10px 20px;
   gap: 24px;
   border-radius: 60px;
@@ -61,6 +60,17 @@ body {
   overflow: hidden;
 }
 
-.sponsor > div > img {
-  border-radius: 1000px;
+.timer {
+  font-family: "Digital Numbers", sans-serif;
+}
+
+.Home {
+  user-select: auto;
+  pointer-events: none;
+}
+
+td {
+  color: red;
+
+  padding: 3px;
 }
