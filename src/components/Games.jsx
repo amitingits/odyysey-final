@@ -4,7 +4,7 @@ import games from "./GamesData";
 
 export default function Games() {
   return <>
-  <div className="gamesPage my-20">
+  <div id="game" className="gamesPage my-20">
     <h1>GAMES</h1>  
     {
       games.map((game)=>(
