@@ -198,3 +198,101 @@ td {
     max-width: 55%;
   }
 }
+
+
+
+/*  speaker page css */
+
+#speaker{
+  margin-block: 2rem 5rem;
+}
+
+.speakerTitle{
+  font-family: "Game Of Squids", sans-serif;
+  font-weight: 400;
+  font-size: 68.43px;
+  text-align: center;
+}
+
+.listOfSpeakers{
+  overflow-x: hidden;
+  padding: 3rem 2rem;
+  width: 100vw;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-around;
+  gap: 200px;
+  margin-inline: auto;
+
+}
+
+/* .listOfSpeakers{
+  width: 1200px;
+  display: grid;
+  grid-template-columns: repeat(3, minmax(300px, 1fr));
+  gap: 100px;
+  margin-inline: auto;
+  margin-top: 2rem;
+} */
+
+.individualSpeaker{
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  width: 300px;
+
+}
+
+.circleImage {
+  transform: rotate(18deg);
+}
+
+.rectangleImage{
+  transform: rotate(270deg);
+}
+
+.triangleImage{
+  transform: rotate(120deg);
+}
+
+.personImage{
+  position: absolute;
+  top: 30px;
+  width: 300px;
+  transition: transform 0.3s ease-in-out;
+
+}
+
+.personImage:hover{
+  transform: scale(1.09);
+}
+
+.personDetails{
+  text-align: center;
+  position: relative;
+  margin-top: 104px;
+}
+
+.personName{
+  font-size: 24px;
+  font-weight: 500;
+}
+
+.personDesignation{
+  font-size: 20px;
+  font-weight: 300;
+}
+
+
+
+.trianglePersonImage{
+  top: 15px;
+  left:-15%;
+}
+
+.triangleDetails{
+  bottom: -15px;
+}
+
+@
