@@ -65,7 +65,7 @@ export default function Home() {
       <img
         src={balckman}
         alt="balckman"
-        className="relative  object-cover bottom-15 w-60"
+        className="blackMan relative  object-cover bottom-15 w-60"
         draggable={false}
       />
 

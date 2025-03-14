@@ -67,6 +67,8 @@ body {
   border-radius: 1000px;
 }
 
+/* home page css */
+
 .timer {
   font-family: "Digital Numbers", sans-serif;
 }
@@ -78,7 +80,6 @@ body {
 
 td {
   color: red;
-
   padding: 3px;
 }
 
@@ -227,14 +228,6 @@ td {
 
 }
 
-/* .listOfSpeakers{
-  width: 1200px;
-  display: grid;
-  grid-template-columns: repeat(3, minmax(300px, 1fr));
-  gap: 100px;
-  margin-inline: auto;
-  margin-top: 2rem;
-} */
 
 .individualSpeaker{
   display: flex;
@@ -295,4 +288,3 @@ td {
   bottom: -15px;
 }
 
-@
