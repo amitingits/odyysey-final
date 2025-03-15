@@ -5,7 +5,7 @@ export default function Navbar() {
       <div className=" logo  ">
         <img src={oddessylogo} alt="Ai-Odyssey" className=" h-[71px] " />
       </div>
-      <div className="flex justify-center navbar items-center bg-gradient-to-br from-blue-500  via-[#1c1c1c] to-[#2c2c2c]">
+      <div className="flex justify-center navbar items-center bg-[#2c2c2c]">
         <ul class="navbar-menu flex align-center">
           <li>
             <a href="#home">Home</a>
