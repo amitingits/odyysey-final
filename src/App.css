@@ -46,14 +46,19 @@ body {
 }
 
 .navbar-menu a {
-  color: #ffffff;
+  color: #D0D0D0;
   text-decoration: none;
   font-size: 16px;
   transition: color 0.3s;
+  font-weight: normal;
+  
 }
 
 .navbar-menu a:hover {
-  color: #ffcc00; /* Change this color on hover */
+  color: white;
+  
+  font-weight: bold;
+  /* Change this color on hover */
 }
 .sponsor {
   font-family: "Game Of Squids", sans-serif;
@@ -118,6 +123,8 @@ td {
 .gameTextContent{
   max-width: 50%;
   width: 100%;
+  font-family: lexend;
+  size: 24px;
 
 }
 
@@ -128,9 +135,9 @@ td {
 .gameTitle{
   font-size: 56px;
   font-weight: 700;
-  background: var(--radial-gradient);
+  /* background: var(--radial-gradient);
   -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent; 
+  -webkit-text-fill-color: transparent;  */
 }
 
 .gameTextContent p{
