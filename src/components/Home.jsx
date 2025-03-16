@@ -44,22 +44,22 @@ export default function Home() {
 
   return (
     <div className="Home flex h-screen sticky justify-center items-center">
-      <img
+      {/* <img
         src={circleman}
         alt=""
         className="absolute left-0 top-20"
         dragabble={false}
-      />
+      /> */}
       <img
         src={circleman}
         alt=""
-        className="absolute left-0 top-20"
+        className="circleMan absolute left-0 top-20"
         dragabble={false}
       />
       <img
         src={triangleman}
         alt=""
-        className="absolute right-0 top-60"
+        className="triangleMan absolute right-0 top-60"
         dragabble={false}
       />
       <img
@@ -72,13 +72,13 @@ export default function Home() {
       <img
         src={squareman}
         alt="fuck"
-        className="absolute object-cover bottom-55 w-45"
+        className="squareman absolute object-cover bottom-55 w-45"
         draggable={false}
       />
       <img
         src={logo}
         alt="logo"
-        className="absolute object-contain bottom-55 w-65"
+        className="homeLogo absolute object-contain bottom-55 w-65"
         draggable={false}
       />
       <div className=" absolute timer bottom-30  justify-center">

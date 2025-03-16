@@ -20,6 +20,7 @@ body {
   font-optical-sizing: auto;
   font-style: normal;
   color: var(--primary-color);
+  overflow-x: hidden;
 }
 
 body {
@@ -288,3 +289,62 @@ td {
   bottom: -15px;
 }
 
+
+
+@media (max-width:700px){
+  .blackMan{
+    width: 200px;
+  }
+  .circleMan{
+    width:150x;
+  }
+
+}
+@media (max-width:550px){
+  .blackMan{
+    width: 180px;
+  }
+  .squareman{
+    bottom: 270px;
+    width: 150px;
+  }
+  .circleMan{
+    top: 70px;
+    left: -30px;
+  }
+
+  .triangleMan{
+    top: 320px;
+    right: -60px;
+  }
+
+}
+@media (max-width:400px){
+  .blackMan{
+    width: 140px;
+  }
+  .squareman{
+    bottom: 330px;
+    width: 120px;
+  }
+  .circleMan{
+    top: 70px;
+    left: -10px;
+    width: 150px;
+  }
+
+  .triangleMan{
+    top: 290px;
+    right: -20px;
+    width: 140px;
+  }
+
+  .homeLogo{
+    bottom: 260px;
+  }
+
+  .timer{
+    bottom: 190px;
+  }
+
+}
