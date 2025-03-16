@@ -11,7 +11,7 @@ html {
   --link-color: #8856de;
   --border-radius: 12px;
   scroll-behavior: smooth;
-  --radial-gradient: radial-gradient(circle, #C6D5FF, #476BD0, #000000);
+  --radial-gradient: radial-gradient(circle, #c6d5ff, #476bd0, #000000);
 }
 
 body {
@@ -25,14 +25,20 @@ body {
 
 body {
   margin: 0;
-  font-family: Arial, sans-serif;
+  font-family: "Lexend", sans-serif;
 }
 
 .navbar {
   padding: 10px 20px;
   gap: 24px;
   border-radius: 60px;
+  background-color: #343A40 ;
+  height: 70px;
 }
+
+/* #2C3E50
+#343A40  
+#4A6FA5*/
 
 .navbar-menu {
   list-style: none;
@@ -47,14 +53,18 @@ body {
 }
 
 .navbar-menu a {
-  color: #ffffff;
+  color: #d0d0d0;
   text-decoration: none;
   font-size: 16px;
   transition: color 0.3s;
+  font-weight: normal;
 }
 
 .navbar-menu a:hover {
-  color: #ffcc00; /* Change this color on hover */
+  color: white;
+
+  font-weight: bold;
+  /* Change this color on hover */
 }
 .sponsor {
   font-family: "Game Of Squids", sans-serif;
@@ -84,18 +94,16 @@ td {
   padding: 3px;
 }
 
-
 /* games page css */
 
-
-.gamesPage h1{
+.gamesPage h1 {
   font-family: "Game Of Squids", sans-serif;
   font-weight: 400;
   font-size: 68.43px;
   text-align: center;
 }
 
-.gamesContainer{
+.gamesContainer {
   max-width: 1300px;
   margin-inline: auto;
   padding: 2rem 2rem;
@@ -105,81 +113,87 @@ td {
   /* height: calc(100vh - 180px); */
 }
 
-.gamesContentDiv{
+.gamesContentDiv {
   display: flex;
   justify-content: space-between;
   gap: 20px;
   margin-block: 2rem;
 }
 
-.gamesContentReverseFlex{
+.gamesContentReverseFlex {
   display: flex;
   flex-direction: row-reverse;
 }
 
-.gameTextContent{
+.gameTextContent {
   max-width: 50%;
   width: 100%;
-
+  font-family: lexend;
+  size: 24px;
 }
 
-.gameTextContent *{
+.gameTextContent * {
   margin-bottom: 1rem;
 }
 
-.gameTitle{
+.gameTitle {
   font-size: 56px;
   font-weight: 700;
-  background: var(--radial-gradient);
+  /* background: var(--radial-gradient);
   -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent; 
+  -webkit-text-fill-color: transparent;  */
 }
 
-.gameTextContent p{
+.gameTextContent p {
   margin-bottom: 2rem;
 }
 
-.gameTextContent a{
+.gameTextContent a {
   display: flex;
   justify-content: space-between;
   color: var(--primary-color);
   text-decoration: none;
   font-weight: 500;
   font-size: 18px;
-  border: 2px solid #476BD0;
+  border: 2px solid #476bd0;
   padding: 20px 26px;
   border-radius: 50px;
   max-width: 220px;
   /* width: 100%; */
   height: 70px;
-  background: linear-gradient(90deg, #c6d5ff00, #476cd098, rgba(0, 0, 0, 0.373));
+  background: linear-gradient(
+    90deg,
+    #c6d5ff00,
+    #476cd098,
+    rgba(0, 0, 0, 0.373)
+  );
   opacity: 0.8;
 }
 
-.gameTextContent a:hover{
-  background: linear-gradient(90deg, #c6d5ff99, #476cd069, rgba(0, 0, 0, 0.373));
-
+.gameTextContent a:hover {
+  background: linear-gradient(
+    90deg,
+    #c6d5ff99,
+    #476cd069,
+    rgba(0, 0, 0, 0.373)
+  );
 }
 
-.gameTextContent a:hover img{
-  
+.gameTextContent a:hover img {
   transform: scale(1.09);
-
 }
 
-.gameTextContent a img{
+.gameTextContent a img {
   width: 26px;
   height: 22px;
 }
 
-
-.gameImageDiv img{
+.gameImageDiv img {
   width: 450px;
   height: 450px;
 }
 
-.randomShapeImage{
-  
+.randomShapeImage {
   position: absolute;
   /* bottom: 0; */
   right: 50%;
@@ -188,35 +202,32 @@ td {
   transform: rotate(270deg);
 }
 
-
-@media (max-width:1100px){
-  .gameImageDiv img{
+@media (max-width: 1100px) {
+  .gameImageDiv img {
     max-width: 400px;
-    width:100%;
-   max-height: 400px;
-   height: 100%;
+    width: 100%;
+    max-height: 400px;
+    height: 100%;
   }
-  .gameTextContent{
+  .gameTextContent {
     max-width: 55%;
   }
 }
 
-
-
 /*  speaker page css */
 
-#speaker{
+#speaker {
   margin-block: 2rem 5rem;
 }
 
-.speakerTitle{
+.speakerTitle {
   font-family: "Game Of Squids", sans-serif;
   font-weight: 400;
   font-size: 68.43px;
   text-align: center;
 }
 
-.listOfSpeakers{
+.listOfSpeakers {
   overflow-x: hidden;
   padding: 3rem 2rem;
   width: 100vw;
@@ -226,66 +237,61 @@ td {
   justify-content: space-around;
   gap: 200px;
   margin-inline: auto;
-
 }
 
 
-.individualSpeaker{
+.individualSpeaker {
   display: flex;
   flex-direction: column;
   position: relative;
   width: 300px;
-
 }
 
 .circleImage {
   transform: rotate(18deg);
 }
 
-.rectangleImage{
+.rectangleImage {
   transform: rotate(270deg);
 }
 
-.triangleImage{
+.triangleImage {
   transform: rotate(120deg);
 }
 
-.personImage{
+.personImage {
   position: absolute;
   top: 30px;
   width: 300px;
   transition: transform 0.3s ease-in-out;
-
 }
 
-.personImage:hover{
+.personImage:hover {
   transform: scale(1.09);
 }
 
-.personDetails{
+.personDetails {
   text-align: center;
   position: relative;
   margin-top: 104px;
 }
 
-.personName{
+.personName {
   font-size: 24px;
   font-weight: 500;
 }
 
-.personDesignation{
+.personDesignation {
   font-size: 20px;
   font-weight: 300;
 }
 
-
-
-.trianglePersonImage{
+.trianglePersonImage {
   top: 15px;
-  left:-15%;
+  left: -15%;
 }
 
-.triangleDetails{
+.triangleDetails {
   bottom: -15px;
 }
 
