@@ -6,7 +6,7 @@ export default function Navbar() {
         <div className=" flex justify-between items-center px-8  ">
           <img src={oddessylogo} alt="Ai-Odyssey" className="h-[71px] " />
         </div>
-        <div className="navbar flex justify-between items-center px-8 bg-opacity-40 backdrop-blur-md ">
+        <div className="navbar flex justify-between items-center h-13 px-8 bg-[rgba(44,44,44,0.5)]  backdrop-blur-md ">
           <ul class="navbar-menu flex align-center ">
             <li>
               <a href="#">Home</a>
