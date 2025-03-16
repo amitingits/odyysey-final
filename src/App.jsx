@@ -9,7 +9,7 @@ import Sponsors from "./components/Sposor";
 function App() {
   return (
     <>
-      <Navbar />
+      {/* <Navbar /> */}
       <Home />
       <Games />
       <Speakers />
