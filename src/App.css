@@ -27,21 +27,42 @@ body {
   font-family: Arial, sans-serif;
 }
 
+.navbar {
+  padding: 10px 20px;
+  gap: 24px;
+  border-radius: 60px;
+}
+
+.navbar-menu {
+  list-style: none;
+  display: flex;
+  justify-content: space-around;
+  margin: 0;
+  padding: 0;
+}
+
+.navbar-menu li {
+  margin: 0 15px;
+}
+
 .navbar-menu a {
-  color: #ffffff;
+  color: #d0d0d0;
   text-decoration: none;
   font-size: 16px;
   transition: color 0.3s;
+  font-weight: normal;
 }
 
 .navbar-menu a:hover {
-  color: #ffcc00;
+  color: white;
+
+  font-weight: bold;
+  /* Change this color on hover */
 }
 
 .sponsor {
   font-family: "Game Of Squids", sans-serif;
   font-weight: 400;
-  font-size: 68.43px;
   overflow: hidden;
   text-align: center;
 }
@@ -99,24 +120,21 @@ td {
 .gameTextContent {
   max-width: 50%;
   width: 100%;
-}
-
-.gameTextContent * {
-  margin-bottom: 1rem;
+  font-family: lexend;
+  size: 24px;
 }
 
 .gameTitle {
   font-size: 56px;
   font-weight: 700;
-  background: var(--radial-gradient);
+  /* background: var(--radial-gradient);
   -webkit-background-clip: text;
-  background-clip: text;
-  -webkit-text-fill-color: transparent;
+  -webkit-text-fill-color: transparent;  */
 }
 
-.gameTextContent p {
+/* .gameTextContent p {
   margin-bottom: 2rem;
-}
+} */
 
 .gameTextContent a {
   display: flex;
@@ -193,7 +211,6 @@ td {
 .speakerTitle {
   font-family: "Game Of Squids", sans-serif;
   font-weight: 400;
-  font-size: 68.43px;
   text-align: center;
 }
 
@@ -271,4 +288,17 @@ td {
 
 .triangleDetails {
   bottom: -15px;
+}
+
+@media (max-width: 768px) {
+  .gamesContentReverseFlex {
+    display: block;
+  }
+  .gamesContentDiv {
+    display: block;
+  }
+
+  .gameTextContent {
+    max-width: 100%;
+  }
 }

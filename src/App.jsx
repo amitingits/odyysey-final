@@ -13,7 +13,7 @@ function App() {
       <Home />
       <Games />
       <Speakers />
-      {/* <Timeline /> */}
+      <Timeline />
       <Sponsors />
     </>
   );
