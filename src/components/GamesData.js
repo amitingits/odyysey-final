@@ -53,7 +53,7 @@ const games = [
       Advanced AI-driven enemies adapt to your strategies, making battles intense. 
       Will you become the ultimate cyber warrior in this neon-drenched battleground?`,
     link: "/cyberArena",
-    // randomShapeImage: Rectangle,
+    randomShapeImage: Rectangle,
     image: SpaceCity1,
   },
   {

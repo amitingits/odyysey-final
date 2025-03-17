@@ -3,14 +3,7 @@ import { useState } from "react";
 import triangleForLink from "../assets/triangleForLink.svg";
 import Rectangle from "../assets/Rectangle.svg";
 
-export default function GameComponent({
-  id,
-  title,
-  description,
-  link,
-  randomShapeImage,
-  image,
-}) {
+export default function GameComponent({ id, title, description, link, image }) {
   const [expanded, setExpanded] = useState(false);
 
   return (
@@ -42,7 +35,7 @@ export default function GameComponent({
             </Link>
           </div>
         </div>
-        <img className="randomShapeImage" src={randomShapeImage} alt="Shape" />
+        {/* <img className="randomShapeImage" src={randomShapeImage} alt="Shape" /> */}
       </div>
     </>
   );

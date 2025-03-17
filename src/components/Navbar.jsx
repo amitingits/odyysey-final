@@ -6,7 +6,7 @@ export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
-    <header className="fixed top-0 left-0 w-full z-50 bg-[rgba(44,44,44,0.5)] backdrop-blur-md py-4 shadow-lg">
+    <header className="fixed top-0 left-0 w-full z-50 py-4 shadow-lg">
       <nav className="flex justify-between items-center px-6 md:px-10">
         {/* Logo */}
         <div className="flex items-center">
@@ -18,7 +18,7 @@ export default function Navbar() {
         </div>
 
         {/* Desktop Menu */}
-        <ul className="hidden md:flex space-x-6 text-white text-lg">
+        <ul className="hidden md:flex space-x-6 text-white h-13 items-center p-4  text-lg rounded-[60px] bg-[rgba(45,45,45,0.5)] backdrop-blur-md">
           <li>
             <a href="#" className="hover:text-amber-300">
               Home
