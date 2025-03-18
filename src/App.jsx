@@ -5,15 +5,17 @@ import Games from "./components/Games";
 import Timeline from "./components/Timeline";
 import Speakers from "./components/Speaker";
 import Sponsors from "./components/Sposor";
+import Glimpse from "./components/Glimpse";
 
 function App() {
   return (
     <>
-      {/* <Navbar /> */}
+      <Navbar />
       <Home />
       <Games />
       <Speakers />
-      {/* <Timeline /> */}
+      <Timeline />
+      <Glimpse/>
       <Sponsors />
     </>
   );
