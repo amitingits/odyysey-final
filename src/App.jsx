@@ -6,7 +6,7 @@ import Timeline from "./components/Timeline";
 import Speakers from "./components/Speaker";
 import Sponsors from "./components/Sposor";
 import About from "./components/About";
-import Temp from "./components/Temp";
+import Glimpse from "./components/Glimpse";
 
 function App() {
   return (
@@ -17,8 +17,8 @@ function App() {
       <Games />
       <Speakers />
       <Timeline />
+      <Glimpse />
       <Sponsors />
-      {/* <Temp />? */}
     </>
   );
 }

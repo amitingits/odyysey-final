@@ -18,33 +18,47 @@ export default function Navbar() {
         </div>
 
         {/* Desktop Menu */}
-        <ul className="hidden md:flex space-x-6 text-white h-13 items-center p-4  text-lg rounded-[60px] bg-[rgba(45,45,45,0.5)] backdrop-blur-md">
-          <li>
-            <a href="#" className="hover:text-amber-300">
-              Home
-            </a>
-          </li>
-          <li>
-            <a href="#game" className="hover:text-amber-300">
-              Games
-            </a>
-          </li>
-          <li>
-            <a href="#speaker" className="hover:text-amber-300">
-              Speakers
-            </a>
-          </li>
-          <li>
-            <a href="#timeline" className="hover:text-amber-300">
-              Schedule
-            </a>
-          </li>
-          <li>
-            <a href="#sponsor" className="hover:text-amber-300">
-              Partners & Sponsors
-            </a>
-          </li>
-        </ul>
+        <div className="flex">
+          <ul className="hidden md:flex space-x-6 text-white h-13 items-center p-4  text-lg rounded-[60px] bg-[rgba(45,45,45,0.5)] backdrop-blur-md">
+            <li>
+              <a href="#" className="hover:text-amber-300">
+                Home
+              </a>
+            </li>
+            <li>
+              <a href="#game" className="hover:text-amber-300">
+                Games
+              </a>
+            </li>
+            <li>
+              <a href="#speaker" className="hover:text-amber-300">
+                Speakers
+              </a>
+            </li>
+            <li>
+              <a href="#timeline" className="hover:text-amber-300">
+                Schedule
+              </a>
+            </li>
+            <li>
+              <a href="#sponsor" className="hover:text-amber-300">
+                Partners & Sponsors
+              </a>
+            </li>
+          </ul>
+
+          <ul className="hidden md:flex space-x-6 text-white h-13 items-center p-4  text-lg rounded-[60px] bg-[rgba(45,45,45,0.5)] register h-13 backdrop-blur-md ml-2 border border-blue-500">
+            <li className="hover:text-amber-300">
+              <a
+                href="https://www.infivent.io/eventdetail/f4963c24-022b-4fe4-b705-193d070005f7"
+                className=""
+                target="_blank"
+              >
+                Register Now
+              </a>
+            </li>
+          </ul>
+        </div>
 
         {/* Mobile Menu Button */}
         <button
@@ -105,6 +119,17 @@ export default function Navbar() {
               onClick={() => setIsOpen(false)}
             >
               Partners & Sponsors
+            </a>
+          </li>
+
+          <li>
+            <a
+              href="https://www.infivent.io/eventdetail/f4963c24-022b-4fe4-b705-193d070005f7"
+              target="_blank"
+              className="block py-2 hover:text-amber-300"
+              onClick={() => setIsOpen(false)}
+            >
+              Register Here
             </a>
           </li>
         </ul>
