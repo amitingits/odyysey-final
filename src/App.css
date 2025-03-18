@@ -22,11 +22,6 @@ body {
   color: var(--primary-color);
 }
 
-body {
-  margin: 0;
-  font-family: Arial, sans-serif;
-}
-
 .navbar {
   padding: 10px 20px;
   gap: 24px;
@@ -301,4 +296,8 @@ td {
   .gameTextContent {
     max-width: 100%;
   }
+}
+
+.squidFont {
+  font-family: "Game Of Squids";
 }
