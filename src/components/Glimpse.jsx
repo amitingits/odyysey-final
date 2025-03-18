@@ -12,7 +12,7 @@ const Glimpse = () => {
           <div className="grid-item item3"></div>
           <div className="grid-item item4">
             <h1 className="middleHeading bg-gradient-to-r from-[#C6D5FF] via-[#476BD0] to-[#476BD0] bg-clip-text text-transparent text-center">
-              AIODYSSEY 2024ca
+              AIODYSSEY 2024
             </h1>
           </div>
           <div className="grid-item item5"></div>
