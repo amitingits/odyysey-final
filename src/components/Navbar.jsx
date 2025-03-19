@@ -21,34 +21,34 @@ export default function Navbar() {
         <div className="flex">
           <ul className="hidden md:flex space-x-6 text-white h-13 items-center p-4  text-lg rounded-[60px] bg-[rgba(45,45,45,0.5)] backdrop-blur-md">
             <li>
-              <a href="#" className="hover:text-amber-300">
+              <a href="#" className="hover:text-[#005ebe]">
                 Home
               </a>
             </li>
             <li>
-              <a href="#game" className="hover:text-amber-300">
+              <a href="#game" className="hover:text-[#005ebe]">
                 Games
               </a>
             </li>
             <li>
-              <a href="#speaker" className="hover:text-amber-300">
+              <a href="#speaker" className="hover:text-[#005ebe]">
                 Speakers
               </a>
             </li>
             <li>
-              <a href="#timeline" className="hover:text-amber-300">
+              <a href="#timeline" className="hover:text-[#005ebe]">
                 Schedule
               </a>
             </li>
             <li>
-              <a href="#sponsor" className="hover:text-amber-300">
+              <a href="#sponsor" className="hover:text-[#005ebe]">
                 Partners & Sponsors
               </a>
             </li>
           </ul>
 
           <ul className="hidden md:flex space-x-6 text-white h-13 items-center p-4  text-lg rounded-[60px] bg-[rgba(45,45,45,0.5)] register h-13 backdrop-blur-md ml-2 border border-blue-500">
-            <li className="hover:text-amber-300">
+            <li className="hover:text-[#005ebe]">
               <a
                 href="https://www.infivent.io/eventdetail/f4963c24-022b-4fe4-b705-193d070005f7"
                 className=""
@@ -79,7 +79,7 @@ export default function Navbar() {
           <li>
             <a
               href="#"
-              className="block py-2 hover:text-amber-300"
+              className="block py-2 hover:text-[#005ebe]"
               onClick={() => setIsOpen(false)}
             >
               Home
@@ -88,7 +88,7 @@ export default function Navbar() {
           <li>
             <a
               href="#game"
-              className="block py-2 hover:text-amber-300"
+              className="block py-2 hover:text-[#005ebe]"
               onClick={() => setIsOpen(false)}
             >
               Games
@@ -97,7 +97,7 @@ export default function Navbar() {
           <li>
             <a
               href="#speaker"
-              className="block py-2 hover:text-amber-300"
+              className="block py-2 hover:text-[#005ebe]"
               onClick={() => setIsOpen(false)}
             >
               Speakers
@@ -106,7 +106,7 @@ export default function Navbar() {
           <li>
             <a
               href="#timeline"
-              className="block py-2 hover:text-amber-300"
+              className="block py-2 hover:text-[#005ebe]"
               onClick={() => setIsOpen(false)}
             >
               Schedule
@@ -115,7 +115,7 @@ export default function Navbar() {
           <li>
             <a
               href="#sponsor"
-              className="block py-2 hover:text-amber-300"
+              className="block py-2 hover:text-[#005ebe]"
               onClick={() => setIsOpen(false)}
             >
               Partners & Sponsors
@@ -126,7 +126,7 @@ export default function Navbar() {
             <a
               href="https://www.infivent.io/eventdetail/f4963c24-022b-4fe4-b705-193d070005f7"
               target="_blank"
-              className="block py-2 hover:text-amber-300"
+              className="block py-2 hover:text-[#005ebe]"
               onClick={() => setIsOpen(false)}
             >
               Register Here

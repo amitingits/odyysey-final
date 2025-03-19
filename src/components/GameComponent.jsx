@@ -18,7 +18,7 @@ export default function GameComponent({ id, title, description, link, image }) {
             <img src={image} alt="Game" />
           </div>
           <div className="gameTextContent flex flex-col gap-6 lg:gap-10">
-            <h2 className="gameTitle bg-gradient-to-r from-[#C6D5FF] via-[#476BD0] to-[#476BD0] bg-clip-text text-transparent text-center">
+            <h2 className="gameTitle bg-gradient-to-r from-[#C6D5FF] via-[#476BD0] to-[#476BD0] bg-clip-text text-transparent ">
               {title}
             </h2>
             <p className={`line-clamp-3 ${expanded ? "line-clamp-none" : ""}`}>
@@ -30,8 +30,10 @@ export default function GameComponent({ id, title, description, link, image }) {
               </button>
             </div>
             <Link to={link} className="flex items-center align-middle">
-              <div className="text-lg lg:text-[17px]">View Rule Book</div>
-              <img src={triangleForLink} alt="Link Icon" />
+              <span className="hidden md:flex space-x-6 text-white h-13 items-center p-4  text-lg rounded-[60px] bg-[rgba(45,45,45,0.5)] register h-13 transform hover:scale-110 hover:text-[#ffffff] transition-all duration-200   border border-blue-500 ">
+                <p> View Rule Book</p>
+                <img src={triangleForLink} alt="Link Icon" className="" />
+              </span>
             </Link>
           </div>
         </div>

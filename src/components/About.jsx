@@ -1,11 +1,11 @@
 import aboutimg from "../assets/about-img.svg";
 export default function About() {
   return (
-    <div className="m-1 p-1 ">
-      <h1 className="text-[30px] m-1 p-1">About</h1>
-      <h1 className="text-5xl squidFont m-1 p-1">AI ODYYSEY</h1>
-      <div className="flex">
-        <div className="w-1/2 h-1/2 m-1 p-1 text-[18px]">
+    <div className="px-6">
+      <h1 className="text-[30px] p-5">About</h1>
+      <h1 className="text-5xl squidFont p-5">AI ODYYSEY</h1>
+      <div className="flex ">
+        <div className="w-1/2 text-[18px] p-5">
           <p>
             We are thrilled to announce the launch of AI Odyssey 2025, an event
             designed to inspire and connect individuals through innovation,
@@ -19,7 +19,7 @@ export default function About() {
             make learning enjoyable and engaging for all.
           </p>
         </div>
-        <div className=" flex w-1/2 h-1/2 justify-center p-2 ">
+        <div className=" flex w-1/2  justify-center p-2 ">
           <img className="h-full" src={aboutimg} alt="img" />
         </div>
       </div>
