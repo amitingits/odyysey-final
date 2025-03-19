@@ -29,7 +29,7 @@ export default function GameComponent({ id, title, description, link, image }) {
               {description}
             </p>
             <div className="lg:hidden md:hidden readMoreButton">
-              <button onClick={() => setExpanded(!expanded)}>
+              <button  onClick={() => setExpanded(!expanded)}>
                 Read {expanded ? "Less" : "More"}
               </button>
             </div>
