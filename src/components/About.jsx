@@ -5,13 +5,13 @@ export default function About() {
       <h1 className="text-[30px] m-1 p-1">About</h1>
       <h1 className="text-5xl squidFont m-1 p-1">AI ODYYSEY</h1>
       <div className="flex about-part-1">
-        <div className="w-1/2 h-1/2 m-1 p-1 text-[18px] ">
+        <div className="w-1/2 h-1/2 m-1 p-1 text-[18px] paragraph-div-1">
           <p>
             We are thrilled to announce the launch of AI Odyssey 2025, an event
             designed to inspire and connect individuals through innovation,
             creativity, and technological advancement
           </p>
-          <p>
+          <p className="para2">
             <br />
             This year, we’re embracing a new approach by integrating AI with the
             thrill of gaming. We aim to create an immersive and interactive
@@ -54,9 +54,9 @@ export default function About() {
       </div>
 
       <div className="mt-10 text-center about-part-3">
-        <h3 className="text-4xl font-semibold bg-gradient-to-r from-[#C6D5FF] via-[#476BD0] to-[#476BD0] bg-clip-text text-transparent ">
+        <h2 className="text-4xl font-semibold bg-gradient-to-r from-[#C6D5FF] via-[#476BD0] to-[#476BD0] bg-clip-text text-transparent ">
           IEEE CIS SBC
-        </h3>
+        </h2>
         <p className="mt-2 text-[18px]">
           The IEEE Computational Intelligence Society (CIS) is dedicated to
           developing and promoting educational resources for artificial

@@ -93,11 +93,38 @@ td {
 }
 
 @media(max-width:1000px){
+
   .aboutImage{
-    max-width: 500px;
+    width: 100%;
   }
+  .about-part-1{
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+    width: 100%;
+  }
+  .paragraph-div-1{
+    width: 100%;
+  }
+
 }
 @media(max-width:750px){
+
+  .aboutPage h1{
+    text-align: start;
+  
+  }
+  .aboutPage h2{
+    text-align: center;
+    font-size: 30px;
+    margin-bottom: 1rem;
+  }
+
+  .aboutPage p{
+    font-size: 1rem;
+  }
+
+
   .about-part-1, .about-part-2, .about-part-3{
     display: flex;
     flex-direction: column;
@@ -110,7 +137,6 @@ td {
     align-items: center;
   }
 
-  
 
    .about-part-2 {
     gap:20px
@@ -118,10 +144,6 @@ td {
 
   .about-part-3 {
     margin-top: 20px;
-  }
-
-  .w-1\/2{
-    width: 100%;
   }
 }
 
