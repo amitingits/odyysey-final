@@ -82,6 +82,52 @@ td {
   padding: 3px;
 }
 
+/*  about page css */
+
+.aboutPage{
+  padding: 2rem;
+}
+
+.aboutPage h1{
+  text-align: center;
+}
+
+@media(max-width:1000px){
+  .aboutImage{
+    max-width: 500px;
+  }
+}
+@media(max-width:750px){
+  .about-part-1, .about-part-2, .about-part-3{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    text-align: center;
+  }
+
+  .about-part-1{
+    flex-direction: column-reverse;
+    align-items: center;
+  }
+
+  
+
+   .about-part-2 {
+    gap:20px
+  }
+
+  .about-part-3 {
+    margin-top: 20px;
+  }
+
+  .w-1\/2{
+    width: 100%;
+  }
+}
+
+
+
+
 /* games page css */
 
 .gamesPage h1 {
@@ -98,7 +144,6 @@ td {
   display: flex;
   flex-direction: column;
   position: relative;
-  /* height: calc(100vh - 180px); */
 }
 
 .gamesContentDiv {
@@ -324,6 +369,8 @@ td {
   font-family: "Game Of Squids";
 }
 
+/* Glimpse page css */
+
 .glimpsePage {
   display: flex;
   flex-direction: column;
@@ -335,6 +382,7 @@ td {
   font-size: 68.43px;
   text-align: center;
 }
+
 
 .grid-container {
   max-width: 1200px;
@@ -392,6 +440,8 @@ td {
   grid-row-start: span 2;
 }
 
+
+/* loader css */
 .loader {
   --path: #2f3545;
   --dot: #5928ee;
