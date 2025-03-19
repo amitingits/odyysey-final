@@ -42,7 +42,7 @@ export default function Navbar() {
             </li>
             <li>
               <a href="#sponsor" className="hover:text-[#005ebe]">
-                Partners & Sponsors
+                Leaderboard
               </a>
             </li>
           </ul>
@@ -112,13 +112,14 @@ export default function Navbar() {
               Schedule
             </a>
           </li>
+
           <li>
             <a
               href="#sponsor"
               className="block py-2 hover:text-[#005ebe]"
               onClick={() => setIsOpen(false)}
             >
-              Partners & Sponsors
+              Leaderboard
             </a>
           </li>
 

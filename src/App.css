@@ -84,6 +84,67 @@ td {
   padding: 3px;
 }
 
+/*  about page css */
+
+.aboutPage {
+  padding: 2rem;
+}
+
+.aboutPage h1 {
+  text-align: center;
+}
+
+@media (max-width: 1000px) {
+  .aboutImage {
+    width: 100%;
+  }
+  .about-part-1 {
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+    width: 100%;
+  }
+  .paragraph-div-1 {
+    width: 100%;
+  }
+}
+@media (max-width: 750px) {
+  .aboutPage h1 {
+    text-align: start;
+  }
+  .aboutPage h2 {
+    text-align: center;
+    font-size: 30px;
+    margin-bottom: 1rem;
+  }
+
+  .aboutPage p {
+    font-size: 1rem;
+  }
+
+  .about-part-1,
+  .about-part-2,
+  .about-part-3 {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    text-align: center;
+  }
+
+  .about-part-1 {
+    flex-direction: column-reverse;
+    align-items: center;
+  }
+
+  .about-part-2 {
+    gap: 20px;
+  }
+
+  .about-part-3 {
+    margin-top: 20px;
+  }
+}
+
 /* games page css */
 
 .gamesPage h1 {
@@ -94,13 +155,12 @@ td {
 }
 
 .gamesContainer {
-  max-width: 1300px;
+  max-width: 1200px;
   margin-inline: auto;
   padding: 2rem 2rem;
   display: flex;
   flex-direction: column;
   position: relative;
-  /* height: calc(100vh - 180px); */
 }
 
 .gamesContentDiv {
@@ -122,17 +182,14 @@ td {
   size: 24px;
 }
 
+.gameTextContent h2 {
+  text-align: start;
+}
+
 .gameTitle {
   font-size: 56px;
   font-weight: 700;
-  /* background: var(--radial-gradient);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;  */
 }
-
-/* .gameTextContent p {
-  margin-bottom: 2rem;
-} */
 
 /* .gameTextContent a {
   display: flex;
@@ -177,6 +234,7 @@ td {
 .gameImageDiv img {
   width: 450px;
   height: 450px;
+  border-radius: 15px;
 }
 
 .randomShapeImage {
@@ -197,6 +255,45 @@ td {
   }
   .gameTextContent {
     max-width: 55%;
+  }
+}
+
+@media (max-width: 780px) {
+  .gamesContentReverseFlex {
+    display: block;
+  }
+  .gamesContentDiv {
+    display: block;
+  }
+
+  .gameTextContent {
+    max-width: 100%;
+  }
+
+  .image-text-div {
+    flex-direction: column;
+    max-width: 100%;
+  }
+  .gamesContentReverseFlex .image-text-div {
+    display: block;
+    flex-direction: column;
+  }
+  .image-text-div img {
+    max-width: 100%;
+  }
+  .text-link-div {
+    max-width: 100%;
+  }
+  .readMoreButton {
+    margin-bottom: 2rem;
+  }
+
+  .gameTitle {
+    font-size: 45px;
+    margin-bottom: 1rem;
+  }
+  .ruleBookLink {
+    padding-inline: 17px;
   }
 }
 
@@ -223,15 +320,6 @@ td {
   gap: 200px;
   margin-inline: auto;
 }
-
-/* .listOfSpeakers{
-  width: 1200px;
-  display: grid;
-  grid-template-columns: repeat(3, minmax(300px, 1fr));
-  gap: 100px;
-  margin-inline: auto;
-  margin-top: 2rem;
-} */
 
 .individualSpeaker {
   display: flex;
@@ -288,22 +376,11 @@ td {
   bottom: -15px;
 }
 
-@media (max-width: 768px) {
-  .gamesContentReverseFlex {
-    display: block;
-  }
-  .gamesContentDiv {
-    display: block;
-  }
-
-  .gameTextContent {
-    max-width: 100%;
-  }
-}
-
 .squidFont {
   font-family: "Game Of Squids";
 }
+
+/* Glimpse page css */
 
 .glimpsePage {
   display: flex;
@@ -373,6 +450,7 @@ td {
   grid-row-start: span 2;
 }
 
+/* loader css */
 .loader {
   --path: #2f3545;
   --dot: #5928ee;
@@ -589,4 +667,8 @@ html {
 *:before,
 *:after {
   box-sizing: border-box;
+}
+
+body {
+  min-height: 100vh;
 }

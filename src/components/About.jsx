@@ -1,17 +1,17 @@
 import aboutimg from "../assets/about-img.svg";
 export default function About() {
   return (
-    <div className="px-6">
-      <h1 className="text-[30px] p-5">About</h1>
-      <h1 className="text-5xl squidFont p-5">AI ODYYSEY</h1>
-      <div className="flex ">
-        <div className="w-1/2 text-[18px] p-5">
+    <div className="m-1 p-1 aboutPage">
+      <h1 className="text-[30px] m-1 p-1">About</h1>
+      <h1 className="text-5xl squidFont m-1 p-1">AI ODYYSEY</h1>
+      <div className="flex about-part-1">
+        <div className="w-1/2 h-1/2 m-1 p-1 text-[18px] paragraph-div-1">
           <p>
             We are thrilled to announce the launch of AI Odyssey 2025, an event
             designed to inspire and connect individuals through innovation,
             creativity, and technological advancement
           </p>
-          <p>
+          <p className="para2">
             <br />
             This year, we’re embracing a new approach by integrating AI with the
             thrill of gaming. We aim to create an immersive and interactive
@@ -19,12 +19,12 @@ export default function About() {
             make learning enjoyable and engaging for all.
           </p>
         </div>
-        <div className=" flex w-1/2  justify-center p-2 ">
+        <div className=" flex w-1/2 h-1/2 justify-center p-2 aboutImage">
           <img className="h-full" src={aboutimg} alt="img" />
         </div>
       </div>
 
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-15">
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-15 about-part-2">
         <div className="p-5 ">
           <h2 className="text-4xl font-semibold bg-gradient-to-r from-[#C6D5FF] via-[#476BD0] to-[#476BD0] bg-clip-text text-transparent ">
             AI Department
@@ -53,10 +53,10 @@ export default function About() {
         </div>
       </div>
 
-      <div className="mt-10 text-center">
-        <h3 className="text-4xl font-semibold bg-gradient-to-r from-[#C6D5FF] via-[#476BD0] to-[#476BD0] bg-clip-text text-transparent ">
+      <div className="mt-10 text-center about-part-3">
+        <h2 className="text-4xl font-semibold bg-gradient-to-r from-[#C6D5FF] via-[#476BD0] to-[#476BD0] bg-clip-text text-transparent ">
           IEEE CIS SBC
-        </h3>
+        </h2>
         <p className="mt-2 text-[18px]">
           The IEEE Computational Intelligence Society (CIS) is dedicated to
           developing and promoting educational resources for artificial

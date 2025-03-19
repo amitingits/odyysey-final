@@ -1,5 +1,4 @@
 import React from "react";
-// import './GridComponent.css';
 
 const Glimpse = () => {
   return (

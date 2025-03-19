@@ -56,13 +56,13 @@ export default function Home() {
       <img
         src={circleman}
         alt=""
-        className="absolute left-0 top-20"
+        className="circleMan absolute left-0 top-20"
         dragabble={false}
       />
       <img
         src={triangleman}
         alt=""
-        className="absolute right-0 top-60"
+        className="triangleMan absolute right-0 top-60"
         dragabble={false}
       />
       <img
