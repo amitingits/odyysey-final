@@ -58,7 +58,7 @@ body {
   /* Change this color on hover */
 }
 
-#sponsor{
+#sponsor {
   max-width: 1400px;
   margin-inline: auto;
   margin-top: 2rem;
@@ -100,7 +100,7 @@ td {
   text-align: start;
 }
 
-.aboutPage p{
+.aboutPage p {
   font-style: normal;
   font-weight: 300;
 }
@@ -205,7 +205,7 @@ td {
 .gameTitle {
   font-size: 56px;
   font-weight: 700;
-  margin : 0;
+  margin: 0;
 }
 
 /* .gameTextContent a {
@@ -325,8 +325,6 @@ td {
   font-weight: 400;
   text-align: center;
 }
-
-
 
 .listOfSpeakers {
   overflow-x: hidden;
@@ -693,13 +691,12 @@ body {
   min-height: 100vh;
 }
 
-
 /*  timeline css */
 
-.day{
+.day {
   width: 130px;
   border: 1px solid white;
-  padding : 22px 33px;
+  padding: 22px 33px;
   border-radius: 50px;
   background: linear-gradient(
     90deg,
@@ -712,7 +709,7 @@ body {
   font-weight: 500;
 }
 
-.buttonDiv{
+.buttonDiv {
   width: 300px;
   display: flex;
   justify-content: space-between;
