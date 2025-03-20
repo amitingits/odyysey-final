@@ -60,7 +60,7 @@ body {
 }
 
 #sponsor{
-  max-width: 1400px;
+  /* max-width: 1500px; */
   margin-inline: auto;
   margin-top: 2rem;
 }
@@ -94,7 +94,9 @@ td {
 /*  about page css */
 
 .aboutPage {
-  padding: 2rem;
+  max-width: 1500px;
+  /* padding: 2rem; */
+  margin-inline: auto;
 }
 
 .aboutPage h1 {
@@ -416,25 +418,13 @@ td {
   text-align: center;
 }
 
-/* .grid-container {
-  max-width: 1000px;
-  max-height: 700px;
-  width: 100%;
-  height: 1200px;
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: repeat(3, 1fr);
-  gap: 15px;
-  margin: 2rem auto;
-} */
-
 .grid-container {
   max-width: 1000px;
   max-height: 700px;
   width: 100%;
   height: 1200px;
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: repeat(3, 1fr);
   grid-template-rows: repeat(3, 1fr);
   gap: 15px;
   margin: 2rem auto;
@@ -445,14 +435,14 @@ td {
   border: 1px solid #ddd;
 }
 
-/* .item1 {
+.item1 {
   grid-row-start: span 2;
   grid-column-start: 1;
 }
 
 .item2 {
   grid-column-start: span 2;
-} */
+}
 
 .item3 {
   grid-column-start: 1;
@@ -472,17 +462,17 @@ td {
 .middleHeading {
   font-family: "Poppins", sans-serif !important;
   font-weight: 700;
-  font-size: 55.43px;
+  font-size: 50px;
   text-align: center;
 }
 
-/* .item4 {
+.item4 {
   line-height: 40px;
 }
 
 .item5 {
   grid-row-start: span 2;
-} */
+}
 
 @media (max-width:1060px){
   .grid-container {
@@ -491,10 +481,11 @@ td {
     grid-template-rows: repeat(4, 1fr);
   }
   .item1{
-    grid-row-start: span 2;
+    grid-row-start:4;  
+    grid-column-start: 2;
   }
   .item3{
-    grid-row-start: span 2;  
+    grid-row-start:2;  
     grid-row-end: 4;
   }
   .item2{
@@ -505,8 +496,9 @@ td {
     grid-row-start: 4;
   }
   .item5{
-    grid-row-start: 4;
+    grid-row-start: 2;
     grid-column-start: 2;
+    grid-row-end: 4;
   }
 }
 
@@ -529,8 +521,10 @@ td {
 }
 
 /* loader css */
+
+/* #2f3545 */
 .loader {
-  --path: #2f3545;
+  --path: white;
   --dot: #5928ee;
   --duration: 3s;
   width: 44px;

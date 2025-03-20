@@ -44,7 +44,7 @@ export default function Home() {
 
   return (
     <div
-      className="Home flex h-screen sticky justify-center items-center pt-20"
+      className="Home flex h-screen sticky justify-center items-center pt-25"
       id="home"
     >
       <img
@@ -75,7 +75,7 @@ export default function Home() {
       <img
         src={squareman}
         alt="fuck"
-        className="absolute object-cover bottom-55 w-45"
+        className="absolute object-cover bottom-50 w-45"
         dragabble={false}
       />
       <img

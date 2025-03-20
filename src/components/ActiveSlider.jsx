@@ -27,10 +27,10 @@ export default function ActiveSlider({ direction }) {
           <img src={img5} alt="" className="rounded-[10px]" />
         </div>
         <div className="w-[214px] h-[137px] p-5 m-1">
-          <img src={img6} alt="" className="rounded-[10px]" />
+          <img src={img1} alt="" className="rounded-[10px]" />
         </div>
         <div className="w-[214px] h-[137px] p-5 m-1">
-          <img src={img7} alt="" className="rounded-[10px]" />
+          <img src={img2} alt="" className="rounded-[10px]" />
         </div>
       </Marquee>
     </>
