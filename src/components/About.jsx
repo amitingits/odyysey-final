@@ -43,7 +43,7 @@ export default function About() {
           <h2 className=" text-4xl font-semibold bg-gradient-to-r from-[#C6D5FF] via-[#476BD0] to-[#476BD0] bg-clip-text text-transparent ">
             Centre of Excellence (AIML)
           </h2>
-          <p className="mt-2 text-[18px]">
+          <p className="mt-2 text-[16px]">
             GHRCE, Nagpur, the Centre of Excellence (CoE) is a vibrant
             organizational unit committed to attaining unmatched excellence in a
             particular field. As a central hub for implementing best practices,

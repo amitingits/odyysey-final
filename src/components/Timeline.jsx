@@ -48,8 +48,13 @@ const timelineEvents = [
 export default function Timeline() {
   return (
     <div className="relative max-w-dvw px-4 md:px-8 py-10" id="timeline">
-      <div className="speakerTitle flex justify-center text-3xl md:text-4xl lg:text-6xl">
+      <div className="speakerTitle flex justify-center text-6xl">
         Schedule
+      </div>
+
+      <div className="buttonDiv">
+        <button className="day">Day 1</button>
+        <button className="day">Day 2</button>
       </div>
 
       {/* Timeline Image */}

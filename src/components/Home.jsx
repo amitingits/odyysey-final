@@ -44,7 +44,7 @@ export default function Home() {
 
   return (
     <div
-      className="Home flex h-screen sticky justify-center items-center"
+      className="Home flex h-screen sticky justify-center items-center pt-20"
       id="home"
     >
       <img
@@ -81,10 +81,10 @@ export default function Home() {
       <img
         src={logo}
         alt="logo"
-        className="absolute object-contain bottom-50 w-100 "
+        className="absolute object-contain bottom-50 w-130 "
         draggable={false}
       />
-      <div className="justify-items-center  mx-auto   gap-1 text-red-600 absolute timer bottom-17 justify-center flex">
+      <div className="justify-items-center  mx-auto  gap-1 text-white-600 absolute timer bottom-17 justify-center flex">
         <div className="flex-1  flex-col items-center justify-center">
           <p className="text-[50.4px] justify-center flex">
             {formatNumber(timeLeft.days)}
