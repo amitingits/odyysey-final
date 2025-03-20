@@ -56,6 +56,12 @@ body {
   /* Change this color on hover */
 }
 
+#sponsor{
+  max-width: 1400px;
+  margin-inline: auto;
+  margin-top: 2rem;
+}
+
 .sponsor {
   font-family: "Game Of Squids", sans-serif;
   font-weight: 400;
@@ -84,12 +90,14 @@ td {
 
 /*  about page css */
 
-.aboutPage{
-  padding: 2rem;
+.squidFont {
+  font-family: "Game Of Squids";
 }
 
-.aboutPage h1{
-  text-align: center;
+.aboutPage{
+  padding: 2rem;
+  max-width: 1400px;
+  margin-inline: auto;
 }
 
 @media(max-width:1000px){
@@ -144,6 +152,9 @@ td {
 
   .about-part-3 {
     margin-top: 20px;
+  }
+  .squidFont{
+    font-size: 38px;
   }
 }
 
@@ -387,9 +398,7 @@ td {
 }
 
 
-.squidFont {
-  font-family: "Game Of Squids";
-}
+
 
 /* Glimpse page css */
 

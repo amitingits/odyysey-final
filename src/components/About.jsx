@@ -4,7 +4,7 @@ export default function About() {
     <div className="m-1 p-1 aboutPage">
       <h1 className="text-[30px] m-1 p-1">About</h1>
       <h1 className="text-5xl squidFont m-1 p-1">AI ODYYSEY</h1>
-      <div className="flex about-part-1">
+      <div className="flex about-part-1 mb-10">
         <div className="w-1/2 h-1/2 m-1 p-1 text-[18px] paragraph-div-1">
           <p>
             We are thrilled to announce the launch of AI Odyssey 2025, an event
