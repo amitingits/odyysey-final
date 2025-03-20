@@ -21,6 +21,8 @@ body {
   font-optical-sizing: auto;
   font-style: normal;
   color: var(--primary-color);
+  margin: 0 2px;
+  color: #e0e0e0;
 }
 
 .navbar {
@@ -90,76 +92,64 @@ td {
 
 /*  about page css */
 
-.squidFont {
-  font-family: "Game Of Squids";
-}
-
-.aboutPage{
+.aboutPage {
   padding: 2rem;
-  max-width: 1400px;
-  margin-inline: auto;
 }
 
-@media(max-width:1000px){
+.aboutPage h1 {
+  text-align: center;
+}
 
-  .aboutImage{
+@media (max-width: 1000px) {
+  .aboutImage {
     width: 100%;
   }
-  .about-part-1{
+  .about-part-1 {
     display: flex;
     flex-direction: column-reverse;
     align-items: center;
     width: 100%;
   }
-  .paragraph-div-1{
+  .paragraph-div-1 {
     width: 100%;
   }
-
 }
-@media(max-width:750px){
-
-  .aboutPage h1{
+@media (max-width: 750px) {
+  .aboutPage h1 {
     text-align: start;
-  
   }
-  .aboutPage h2{
+  .aboutPage h2 {
     text-align: center;
     font-size: 30px;
     margin-bottom: 1rem;
   }
 
-  .aboutPage p{
+  .aboutPage p {
     font-size: 1rem;
   }
 
-
-  .about-part-1, .about-part-2, .about-part-3{
+  .about-part-1,
+  .about-part-2,
+  .about-part-3 {
     display: flex;
     flex-direction: column;
     width: 100%;
     text-align: center;
   }
 
-  .about-part-1{
+  .about-part-1 {
     flex-direction: column-reverse;
     align-items: center;
   }
 
-
-   .about-part-2 {
-    gap:20px
+  .about-part-2 {
+    gap: 20px;
   }
 
   .about-part-3 {
     margin-top: 20px;
   }
-  .squidFont{
-    font-size: 38px;
-  }
 }
-
-
-
 
 /* games page css */
 
@@ -198,7 +188,7 @@ td {
   size: 24px;
 }
 
-.gameTextContent h2{
+.gameTextContent h2 {
   text-align: start;
 }
 
@@ -207,8 +197,7 @@ td {
   font-weight: 700;
 }
 
-
-.ruleBookLink {
+/* .gameTextContent a {
   display: flex;
   justify-content: space-between;
   color: var(--primary-color);
@@ -220,7 +209,7 @@ td {
   border-radius: 50px;
   max-width: 220px;
   /* width: 100%; */
-  height: 70px;
+/* height: 70px;
   background: linear-gradient(
     90deg,
     #c6d5ff00,
@@ -228,22 +217,22 @@ td {
     rgba(0, 0, 0, 0.373)
   );
   opacity: 0.8;
-}
+} */
 
-.ruleBookLink:hover {
+/* .gameTextContent a:hover {
   background: linear-gradient(
     90deg,
     #c6d5ff99,
     #476cd069,
     rgba(0, 0, 0, 0.373)
   );
-}
-
-.ruleBookLink:hover img {
+} */
+/*
+.gameTextContent a:hover img {
   transform: scale(1.09);
 }
-
-.ruleBookLink img {
+*/
+.gameTextContent a img {
   width: 26px;
   height: 22px;
 }
@@ -275,8 +264,7 @@ td {
   }
 }
 
-@media (max-width:780px) {
-
+@media (max-width: 780px) {
   .gamesContentReverseFlex {
     display: block;
   }
@@ -288,22 +276,21 @@ td {
     max-width: 100%;
   }
 
-  .image-text-div{
-  flex-direction: column;
-  max-width: 100%;
-
+  .image-text-div {
+    flex-direction: column;
+    max-width: 100%;
   }
-  .gamesContentReverseFlex .image-text-div{
+  .gamesContentReverseFlex .image-text-div {
     display: block;
     flex-direction: column;
   }
-  .image-text-div img{
+  .image-text-div img {
     max-width: 100%;
   }
-  .text-link-div{
+  .text-link-div {
     max-width: 100%;
   }
-  .readMoreButton{
+  .readMoreButton {
     margin-bottom: 2rem;
   }
 
@@ -311,10 +298,9 @@ td {
     font-size: 45px;
     margin-bottom: 1rem;
   }
-  .ruleBookLink{
+  .ruleBookLink {
     padding-inline: 17px;
   }
-  
 }
 
 /*  speaker page css */
@@ -340,7 +326,6 @@ td {
   gap: 200px;
   margin-inline: auto;
 }
-
 
 .individualSpeaker {
   display: flex;
@@ -397,8 +382,9 @@ td {
   bottom: -15px;
 }
 
-
-
+.squidFont {
+  font-family: "Game Of Squids";
+}
 
 /* Glimpse page css */
 
@@ -413,7 +399,6 @@ td {
   font-size: 68.43px;
   text-align: center;
 }
-
 
 .grid-container {
   max-width: 1200px;
@@ -470,7 +455,6 @@ td {
 .item5 {
   grid-row-start: span 2;
 }
-
 
 /* loader css */
 .loader {

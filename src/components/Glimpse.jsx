@@ -1,10 +1,8 @@
-
 import React from "react";
 
 const Glimpse = () => {
   return (
     <>
-  
       <div id="glimpses" className="glimpsePage">
         <h1 className="glimpseTitle">Glimpses</h1>
         <div className="grid-container">
@@ -25,4 +23,3 @@ const Glimpse = () => {
 };
 
 export default Glimpse;
-

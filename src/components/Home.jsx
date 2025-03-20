@@ -43,13 +43,16 @@ export default function Home() {
   }, [targetTime]);
 
   return (
-    <div className="Home flex h-screen sticky justify-center items-center">
-      {/* <img
+    <div
+      className="Home flex h-screen sticky justify-center items-center"
+      id="home"
+    >
+      <img
         src={circleman}
         alt=""
         className="absolute left-0 top-20"
         dragabble={false}
-      /> */}
+      /> 
       <img
         src={circleman}
         alt=""
@@ -65,53 +68,56 @@ export default function Home() {
       <img
         src={balckman}
         alt="balckman"
-        className="blackMan relative  object-cover bottom-15 w-60"
-        draggable={false}
+        className="relative  object-cover bottom-15 w-60"
+        dragabble={false}
       />
 
       <img
         src={squareman}
         alt="fuck"
-        className="squareman absolute object-cover bottom-55 w-45"
-        draggable={false}
+        className="absolute object-cover bottom-55 w-45"
+        dragabble={false}
       />
       <img
         src={logo}
         alt="logo"
-        className="homeLogo absolute object-contain bottom-55 w-65"
+        className="absolute object-contain bottom-50 w-100 "
         draggable={false}
       />
-      <div className=" absolute timer bottom-30  justify-center">
-        <table className="justify-items-center  mx-auto font-bold">
-          <tr className="justify-items-center  ">
-            <td className=" justify-items-center  text-4xl ">
-              {formatNumber(timeLeft.days)}
-            </td>
-            <td className=" justify-items-center text-4xl ">
-              {formatNumber(timeLeft.minutes)}
-            </td>
-            <td className=" justify-items-center text-4xl ">
-              {formatNumber(timeLeft.minutes)}
-            </td>
-            <td className=" justify-items-center text-4xl ">
-              {formatNumber(timeLeft.seconds)}
-            </td>
-          </tr>
-          <tr className="justify-items-center ">
-            <td className="justify-center items-center text-l text-center ">
-              Day
-            </td>
-            <td className="justify-center items-center text-l text-center ">
-              HRS
-            </td>
-            <td className="justify-center items-center text-l text-center ">
-              MIN
-            </td>
-            <td className="justify-center items-center text-l text-center ">
-              SEC
-            </td>
-          </tr>
-        </table>
+      <div className="justify-items-center  mx-auto   gap-1 text-red-600 absolute timer bottom-17 justify-center flex">
+        <div className="flex-1  flex-col items-center justify-center">
+          <p className="text-[50.4px] justify-center flex">
+            {formatNumber(timeLeft.days)}
+          </p>
+          <p className="text-[20px] justify-center flex">DAYS</p>
+        </div>
+        <div className="flex items-center justify-center text-5xl">
+          <p>:</p>
+        </div>
+        <div className="flex-1  flex-col items-center justify-center">
+          <p className="text-[50.4px] justify-center flex">
+            {formatNumber(timeLeft.hours)}
+          </p>
+          <p className="text-[20px] justify-center flex">HRS</p>
+        </div>
+        <div className="flex items-center justify-center text-5xl">
+          <p>:</p>
+        </div>
+        <div className="flex-1  flex-col items-center justify-center">
+          <p className="text-[50.4px] justify-center flex">
+            {formatNumber(timeLeft.minutes)}
+          </p>
+          <p className="text-[20px] justify-center flex">MIN</p>
+        </div>
+        <div className="flex items-center justify-center text-5xl">
+          <p>:</p>
+        </div>
+        <div className="flex-1  flex-col items-center justify-center">
+          <p className="text-[50.4px] justify-center flex">
+            {formatNumber(timeLeft.seconds)}
+          </p>
+          <p className="text-[20px] justify-center flex">SEC</p>
+        </div>
       </div>
     </div>
   );
