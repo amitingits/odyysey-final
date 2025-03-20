@@ -60,7 +60,7 @@ export default function Navbar() {
                 Games
               </a>
             </li>
-            <li>
+            {/* <li>
               <a
                 href="#speaker"
                 className={`hover:text-[#005ebe] ${
@@ -69,7 +69,7 @@ export default function Navbar() {
               >
                 Speakers
               </a>
-            </li>
+            </li> */}
             <li>
               <a
                 href="#timeline"
@@ -143,7 +143,7 @@ export default function Navbar() {
               Games
             </a>
           </li>
-          <li>
+          {/* <li>
             <a
               href="#speaker"
               className={`block py-2 hover:text-[#005ebe] ${
@@ -153,7 +153,7 @@ export default function Navbar() {
             >
               Speakers
             </a>
-          </li>
+          </li> */}
           <li>
             <a
               href="#timeline"
