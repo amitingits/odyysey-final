@@ -47,7 +47,7 @@ export default function Navbar() {
             </li>
           </ul>
 
-          <ul className="hidden md:flex space-x-6 text-white h-13 items-center p-4  text-lg rounded-[60px] bg-[rgba(45,45,45,0.5)] register h-13 backdrop-blur-md ml-2 border border-blue-500">
+          <ul className="hidden md:flex space-x-6 text-white items-center p-4  text-lg rounded-[60px] bg-[rgba(45,45,45,0.5)] register h-13 backdrop-blur-md ml-2 border border-blue-500">
             <li className="hover:text-[#005ebe]">
               <a
                 href="https://www.infivent.io/eventdetail/f4963c24-022b-4fe4-b705-193d070005f7"
