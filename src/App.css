@@ -23,6 +23,7 @@ body {
   color: var(--primary-color);
   margin: 0 2px;
   color: #e0e0e0;
+  overflow-x: hidden;
 }
 
 .navbar {
@@ -305,13 +306,14 @@ td {
     margin-bottom: 2rem;
   }
 
-  .gameTitle {
+  .gameTitle{
     font-size: 45px;
     margin-bottom: 1rem;
   }
   .ruleBookLink {
     padding-inline: 17px;
   }
+
 }
 
 /*  speaker page css */
@@ -412,13 +414,25 @@ td {
   text-align: center;
 }
 
-.grid-container {
-  max-width: 1200px;
+/* .grid-container {
+  max-width: 1000px;
   max-height: 700px;
   width: 100%;
   height: 1200px;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  gap: 15px;
+  margin: 2rem auto;
+} */
+
+.grid-container {
+  max-width: 1000px;
+  max-height: 700px;
+  width: 100%;
+  height: 1200px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
   grid-template-rows: repeat(3, 1fr);
   gap: 15px;
   margin: 2rem auto;
@@ -429,14 +443,14 @@ td {
   border: 1px solid #ddd;
 }
 
-.item1 {
+/* .item1 {
   grid-row-start: span 2;
   grid-column-start: 1;
 }
 
 .item2 {
   grid-column-start: span 2;
-}
+} */
 
 .item3 {
   grid-column-start: 1;
@@ -460,12 +474,56 @@ td {
   text-align: center;
 }
 
-.item4 {
+/* .item4 {
   line-height: 40px;
 }
 
 .item5 {
   grid-row-start: span 2;
+} */
+
+@media (max-width:1060px){
+  .grid-container {
+    max-width: 700px;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+  }
+  .item1{
+    grid-row-start: span 2;
+  }
+  .item3{
+    grid-row-start: span 2;  
+    grid-row-end: 4;
+  }
+  .item2{
+    grid-column-start:span 2;
+    grid-row-start: 1;
+  }
+  .item6{
+    grid-row-start: 4;
+  }
+  .item5{
+    grid-row-start: 4;
+    grid-column-start: 2;
+  }
+}
+
+@media (max-width:770px){
+  .grid-container{
+    max-width: 400px;
+  }
+  .item4{
+    font-size: 20px;
+  }
+  
+.middleHeading{
+  font-size: 40px;
+}
+}
+@media (max-width:450px){
+  .grid-container{
+    max-width: 350px;
+  }
 }
 
 /* loader css */
