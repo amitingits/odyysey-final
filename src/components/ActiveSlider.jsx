@@ -1,9 +1,9 @@
 import Marquee from "react-fast-marquee";
-import img1 from "../assets/SpaceCity1.jpeg";
-import img2 from "../assets/SpaceCity2.jpeg";
-import img3 from "../assets/SpaceCity3.jpeg";
-import img4 from "../assets/SpaceCity4.jpeg";
-import img5 from "../assets/SpaceCity7.jpeg";
+import img1 from "../assets/decode.svg";
+import img2 from "../assets/ieeeCS.svg";
+import img3 from "../assets/learnersDen.svg";
+import img4 from "../assets/mlNagpur.svg";
+import img5 from "../assets/openbox.svg";
 import img6 from "../assets/SpaceCity6.jpeg";
 import img7 from "../assets/SpaceCity7.jpeg";
 
