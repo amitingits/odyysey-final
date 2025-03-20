@@ -16,6 +16,7 @@ export default function GameComponent({ id, title, description, link, image }) {
     return () => window.removeEventListener("resize", handleResize);
   }, []);
 
+
   return (
     <>
       {isMobile ? (
@@ -77,7 +78,7 @@ export default function GameComponent({ id, title, description, link, image }) {
                 {title}
               </h2>
               <p
-                className={`line-clamp-3 ${expanded ? "line-clamp-none" : ""}`}
+                className={`line-clamp-3 ${expanded ? "line-clamp-none" : ""} gamePara`}
               >
                 {description}
               </p>
@@ -86,7 +87,7 @@ export default function GameComponent({ id, title, description, link, image }) {
                   Read {expanded ? "Less" : "More"}
                 </button>
               </div>
-              <Link to={link} className="flex items-center align-middle">
+              <Link to={link} className="flex items-center align-middle mt-4">
                 <span className="hidden md:flex space-x-6 text-white h-13 items-center p-4  text-lg rounded-[60px] bg-[rgba(45,45,45,0.5)] register h-13 transform hover:scale-110 hover:text-[#ffffff] transition-all duration-200   border border-blue-500 ">
                   <p> View Rule Book</p>
                   <img src={triangleForLink} alt="Link Icon" className="" />
