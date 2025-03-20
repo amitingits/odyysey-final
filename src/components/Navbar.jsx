@@ -5,7 +5,6 @@ import oddessylogo from "../assets/white-logo.svg";
 export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
 
-
   const [activeSection, setActiveSection] = useState("");
 
   useEffect(() => {
@@ -13,13 +12,12 @@ export default function Navbar() {
     const observer = new IntersectionObserver(
       (entries) => {
         entries.forEach((entry) => {
-          console.log(`Section: ${entry.target.id}, Intersecting: ${entry.isIntersecting}`);
           if (entry.isIntersecting) {
             setActiveSection(entry.target.id);
           }
         });
       },
-      { threshold: 0.1 } 
+      { threshold: 0.1 }
     );
 
     sections.forEach((section) => observer.observe(section));
@@ -43,27 +41,52 @@ export default function Navbar() {
         <div className="flex">
           <ul className="hidden md:flex space-x-6 text-white h-17 items-center p-4  px-6 text-lg rounded-[60px] bg-[rgba(45,45,45,0.5)] backdrop-blur-md">
             <li>
-              <a href="#home" className={`hover:text-[#005ebe] ${activeSection === "home" ? "text-[#005ebe]" : ""}`}>
+              <a
+                href="#home"
+                className={`hover:text-[#005ebe] ${
+                  activeSection === "home" ? "text-[#005ebe]" : ""
+                }`}
+              >
                 Home
               </a>
             </li>
             <li>
-              <a href="#game" className={`hover:text-[#005ebe] ${activeSection === "game" ? "text-[#005ebe]" : ""}`}>
+              <a
+                href="#game"
+                className={`hover:text-[#005ebe] ${
+                  activeSection === "game" ? "text-[#005ebe]" : ""
+                }`}
+              >
                 Games
               </a>
             </li>
             <li>
-              <a href="#speaker" className={`hover:text-[#005ebe] ${activeSection === "speaker" ? "text-[#005ebe]" : ""}`}>
+              <a
+                href="#speaker"
+                className={`hover:text-[#005ebe] ${
+                  activeSection === "speaker" ? "text-[#005ebe]" : ""
+                }`}
+              >
                 Speakers
               </a>
             </li>
             <li>
-              <a href="#timeline" className={`hover:text-[#005ebe] ${activeSection === "timeline" ? "text-[#005ebe]" : ""}`}>
+              <a
+                href="#timeline"
+                className={`hover:text-[#005ebe] ${
+                  activeSection === "timeline" ? "text-[#005ebe]" : ""
+                }`}
+              >
                 Schedule
               </a>
             </li>
             <li>
-              <a href="#sponsor" className={`hover:text-[#005ebe] ${activeSection === "sponsor" ? "text-[#005ebe]" : ""}`}>
+              <a
+                href="#sponsor"
+                className={`hover:text-[#005ebe] ${
+                  activeSection === "sponsor" ? "text-[#005ebe]" : ""
+                }`}
+              >
                 Leaderboard
               </a>
             </li>
@@ -101,7 +124,9 @@ export default function Navbar() {
           <li>
             <a
               href="#home"
-              className={`block py-2 hover:text-[#005ebe] ${activeSection === "home" ? "text-[#005ebe]" : ""}`}
+              className={`block py-2 hover:text-[#005ebe] ${
+                activeSection === "home" ? "text-[#005ebe]" : ""
+              }`}
               onClick={() => setIsOpen(false)}
             >
               Home
@@ -110,7 +135,9 @@ export default function Navbar() {
           <li>
             <a
               href="#game"
-              className={`block py-2 hover:text-[#005ebe] ${activeSection === "game" ? "text-[#005ebe]" : ""}`}
+              className={`block py-2 hover:text-[#005ebe] ${
+                activeSection === "game" ? "text-[#005ebe]" : ""
+              }`}
               onClick={() => setIsOpen(false)}
             >
               Games
@@ -119,7 +146,9 @@ export default function Navbar() {
           <li>
             <a
               href="#speaker"
-              className={`block py-2 hover:text-[#005ebe] ${activeSection === "speaker" ? "text-[#005ebe]" : ""}`}
+              className={`block py-2 hover:text-[#005ebe] ${
+                activeSection === "speaker" ? "text-[#005ebe]" : ""
+              }`}
               onClick={() => setIsOpen(false)}
             >
               Speakers
@@ -128,7 +157,9 @@ export default function Navbar() {
           <li>
             <a
               href="#timeline"
-              className={`block py-2 hover:text-[#005ebe] ${activeSection === "timeline" ? "text-[#005ebe]" : ""}`}
+              className={`block py-2 hover:text-[#005ebe] ${
+                activeSection === "timeline" ? "text-[#005ebe]" : ""
+              }`}
               onClick={() => setIsOpen(false)}
             >
               Schedule
@@ -137,7 +168,9 @@ export default function Navbar() {
           <li>
             <a
               href="#sponsor"
-              className={`block py-2 hover:text-[#005ebe] ${activeSection === "sponsor" ? "text-[#005ebe]" : ""}`}
+              className={`block py-2 hover:text-[#005ebe] ${
+                activeSection === "sponsor" ? "text-[#005ebe]" : ""
+              }`}
               onClick={() => setIsOpen(false)}
             >
               Leaderboard
