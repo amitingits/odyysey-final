@@ -4,8 +4,7 @@ import img2 from "../assets/ieeeCS.svg";
 import img3 from "../assets/learnersDen.svg";
 import img4 from "../assets/mlNagpur.svg";
 import img5 from "../assets/openbox.svg";
-import img6 from "../assets/SpaceCity6.jpeg";
-import img7 from "../assets/SpaceCity7.jpeg";
+import img6 from "../assets/infivent.svg";
 
 export default function ActiveSlider({ direction }) {
   return (
@@ -27,7 +26,7 @@ export default function ActiveSlider({ direction }) {
           <img src={img5} alt="" className="rounded-[10px]" />
         </div>
         <div className="w-[214px] h-[137px] p-5 m-1">
-          <img src={img1} alt="" className="rounded-[10px]" />
+          <img src={img6} alt="" className="rounded-[10px]" />
         </div>
         <div className="w-[214px] h-[137px] p-5 m-1">
           <img src={img2} alt="" className="rounded-[10px]" />
