@@ -5,6 +5,7 @@ import circleman from "../assets/circle-man.svg";
 import triangleman from "../assets/triangle-man.svg";
 import { useState, useEffect } from "react";
 
+
 export default function Home() {
   function formatNumber(num) {
     return String(num).padStart(2, "0");
@@ -47,6 +48,7 @@ export default function Home() {
       className="Home flex h-screen sticky justify-center items-center pt-25"
       id="home"
     >
+
       <img
         src={circleman}
         alt=""
@@ -78,12 +80,14 @@ export default function Home() {
         className="absolute object-cover bottom-50 w-45"
         dragabble={false}
       />
+  
       <img
         src={logo}
         alt="logo"
         className="absolute object-contain bottom-50 w-130 "
         draggable={false}
-      />
+      /> 
+
       <div className="justify-items-center  mx-auto  gap-1 text-white-600 absolute timer bottom-17 justify-center flex">
         <div className="flex-1  flex-col items-center justify-center">
           <p className="text-xl sm:text-2xl md:text-3xl lg:text-[50.4px] justify-center flex">
