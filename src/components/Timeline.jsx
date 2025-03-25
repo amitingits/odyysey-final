@@ -1,6 +1,6 @@
 import React, { useState } from "react";
-import day1 from "../assets/day1.png";
-import day2 from "../assets/day2.png";
+import day1 from "../assets/day1Timeline.svg";
+import day2 from "../assets/day2Timeline.svg";
 
 export default function Timeline() {
   const [isDay1, setIsDay1] = useState(true);
