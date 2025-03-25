@@ -3,9 +3,9 @@ import Rectangle from "../assets/Rectangle.svg";
 import circle from "../assets/circle.svg";
 import SpaceCity1 from "../assets/SpaceCity1.jpeg";
 import SpaceCity2 from "../assets/SpaceCity2.jpeg";
-import AiDevelop from '../assets/AI-Develop-game.png'
-import binaryCoding from '../assets/binaryCoding.png'
-import strategicTrade  from '../assets/strategicTrade.jpg'
+import AiDevelop from "../assets/AIDevelopgame.png";
+import binaryCoding from "../assets/binaryCoding.png";
+import strategicTrade from "../assets/strategicTrade.jpg";
 
 const games = [
   {
