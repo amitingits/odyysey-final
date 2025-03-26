@@ -474,9 +474,9 @@ td {
   text-align: center;
 }
 
-.item4 {
-  /* line-height: 40px; */
-}
+/* .item4 {
+  line-height: 40px;
+} */
 
 .item5 {
   grid-row-start: span 2;
