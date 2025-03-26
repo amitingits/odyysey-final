@@ -44,7 +44,7 @@ export default function Home() {
 
   return (
     <div
-      className="Home flex h-screen sticky justify-center items-center pt-20"
+      className="Home flex h-screen sticky justify-center items-center pt-25"
       id="home"
     >
       <img
@@ -75,18 +75,20 @@ export default function Home() {
       <img
         src={squareman}
         alt="fuck"
-        className="absolute object-cover bottom-55 w-45"
+        className="absolute object-cover bottom-50 w-45"
         dragabble={false}
       />
+
       <img
         src={logo}
         alt="logo"
         className="absolute object-contain bottom-50 w-130 "
         draggable={false}
       />
-      <div className="justify-items-center  mx-auto  gap-1 text-white-600 absolute timer bottom-25 justify-center flex">
+
+      <div className="justify-items-center  mx-auto  gap-1 text-white-600 absolute timer bottom-17 justify-center flex">
         <div className="flex-1  flex-col items-center justify-center">
-          <p className="text-[55.4px] justify-center flex">
+          <p className="text-xl sm:text-2xl md:text-3xl lg:text-[50.4px] justify-center flex">
             {formatNumber(timeLeft.days)}
           </p>
           <p className="text-[20px] justify-center flex">DAYS</p>
@@ -95,7 +97,7 @@ export default function Home() {
           <p>:</p>
         </div>
         <div className="flex-1  flex-col items-center justify-center">
-          <p className="text-[50.4px] justify-center flex">
+          <p className="text-xl sm:text-2xl md:text-3xl lg:text-[50.4px] justify-center flex">
             {formatNumber(timeLeft.hours)}
           </p>
           <p className="text-[20px] justify-center flex">HRS</p>
@@ -104,7 +106,7 @@ export default function Home() {
           <p>:</p>
         </div>
         <div className="flex-1  flex-col items-center justify-center">
-          <p className="text-[50.4px] justify-center flex">
+          <p className="text-xl sm:text-2xl md:text-3xl lg:text-[50.4px] justify-center flex">
             {formatNumber(timeLeft.minutes)}
           </p>
           <p className="text-[20px] justify-center flex">MIN</p>
@@ -113,7 +115,7 @@ export default function Home() {
           <p>:</p>
         </div>
         <div className="flex-1  flex-col items-center justify-center">
-          <p className="text-[50.4px] justify-center flex">
+          <p className="text-xl lg:text-[50.4px] justify-center flex">
             {formatNumber(timeLeft.seconds)}
           </p>
           <p className="text-[20px] justify-center flex">SEC</p>

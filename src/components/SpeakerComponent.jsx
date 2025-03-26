@@ -16,7 +16,7 @@ export default function SpeakerComponent({
 
   return (
     <>
-      <div className="individualSpeaker">
+      <div className="individualSpeaker w-[240px] md:w-[300px]">
         <img className={shapeClass} src={backgroundShape} alt="" />
         <img
           className={`personImage ${

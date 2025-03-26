@@ -4,7 +4,7 @@ import speakersData from "./speakerData.js";
 export default function Speakers() {
   return (
     <div id="speaker">
-      <h1 className="speakerTitle text-6xl">SPEAKER</h1>
+      <h1 className="speakerTitle text-6xl mb-10">SPEAKER</h1>
       <div className="listOfSpeakers">
         {speakersData.map((speaker, index) => (
           <SpeakerComponent

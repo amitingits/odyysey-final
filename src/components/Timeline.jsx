@@ -7,7 +7,7 @@ export default function Timeline() {
 
   return (
     <div className="relative max-w-dvw px-4 md:px-8 py-10" id="timeline">
-      <div className="speakerTitle flex justify-center text-6xl">Schedule</div>
+      <div className="speakerTitle flex justify-center text-5xl md:text-6xl mb-15">Schedule</div>
 
       <div className="buttonDiv">
         <button

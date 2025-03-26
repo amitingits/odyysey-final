@@ -35,7 +35,7 @@ function App() {
           <Home />
           <About />
           <Games />
-          <Speakers />
+          {/* <Speakers /> */}
           <Timeline />
           <Glimpse />
           <Sponsors />
