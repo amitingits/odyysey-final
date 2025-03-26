@@ -24,14 +24,14 @@ const games = [
   },
   {
     id: 3,
-    title: "HTTP Find",
+    title: "HTTPS Find",
     description: `Join the thrilling adventure of HTTPS Find, where players explore a website to uncover hidden clues. Each clue brings them closer to solving exciting puzzles and advancing to the next challenge. With every step, participants test their thinking, speed, and problem-solving skills. Get ready for an engaging online quest full of fun, mystery, and surprises!`,
     link: "https://qrfy.io/DghE2ew1zr",
     image: SpaceCity1,
   },
   {
     id: 4,
-    title: "AI – NOT",
+    title: "AI or NOT",
     description: `AI-NOT is a super fun and interactive game where you get to guess whether a creation is made by AI or a human! As you play, you’ll earn points and have a blast competing for the top spot, all while sharpening your observation and analytical skills. Come join the fun and see how many you can get right!`,
     link: "https://qrfy.io/e0Obzeson5",
     image: SpaceCity2,
