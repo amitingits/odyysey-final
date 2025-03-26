@@ -18,7 +18,7 @@ export default function Timeline() {
         >
           Day 1
         </button>
-        <button
+        <buttongit
           onClick={() => setIsDay1(false)}
           className={`w-[130px] border text-xl border-white py-[10px] px-[10px] rounded-[50px] bg-gradient-to-r from-[#c6d5ff00] via-[#476cd098] to-[rgba(0,0,0,0.373)] font-medium transition-all duration-300 hover:bg-gradient-to-r hover:from-[#c6d5ff20] hover:via-[#476cd0b8] hover:to-[rgba(0,0,0,0.473)] hover:scale-105 ${
             isDay1 ? "opacity-30" : "opacity-80"
