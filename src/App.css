@@ -59,7 +59,7 @@ body {
   /* Change this color on hover */
 }
 
-#sponsor{
+#sponsor {
   /* max-width: 1500px; */
   margin-inline: auto;
   margin-top: 2rem;
@@ -252,7 +252,7 @@ td {
   height: 22px;
 }
 
-.gameImageDiv{
+.gameImageDiv {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -319,14 +319,13 @@ td {
     margin-bottom: 2rem;
   }
 
-  .gameTitle{
+  .gameTitle {
     font-size: 45px;
     margin-bottom: 1rem;
   }
   .ruleBookLink {
     padding-inline: 20px;
   }
-
 }
 
 /*  speaker page css */
@@ -483,48 +482,48 @@ td {
   grid-row-start: span 2;
 }
 
-@media (max-width:1060px){
+@media (max-width: 1060px) {
   .grid-container {
     max-width: 700px;
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(4, 1fr);
   }
-  .item1{
-    grid-row-start:4;  
+  .item1 {
+    grid-row-start: 4;
     grid-column-start: 2;
   }
-  .item3{
-    grid-row-start:2;  
+  .item3 {
+    grid-row-start: 2;
     grid-row-end: 4;
   }
-  .item2{
-    grid-column-start:span 2;
+  .item2 {
+    grid-column-start: span 2;
     grid-row-start: 1;
   }
-  .item6{
+  .item6 {
     grid-row-start: 4;
   }
-  .item5{
+  .item5 {
     grid-row-start: 2;
     grid-column-start: 2;
     grid-row-end: 4;
   }
 }
 
-@media (max-width:770px){
-  .grid-container{
+@media (max-width: 770px) {
+  .grid-container {
     max-width: 400px;
   }
-  .item4{
+  .item4 {
     font-size: 20px;
   }
-  
-.middleHeading{
-  font-size: 40px;
+
+  .middleHeading {
+    font-size: 40px;
+  }
 }
-}
-@media (max-width:450px){
-  .grid-container{
+@media (max-width: 450px) {
+  .grid-container {
     max-width: 350px;
   }
 }
