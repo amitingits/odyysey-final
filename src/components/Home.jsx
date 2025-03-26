@@ -52,7 +52,7 @@ export default function Home() {
         alt=""
         className="absolute left-0 top-20"
         dragabble={false}
-      /> 
+      />
       <img
         src={circleman}
         alt=""
@@ -84,9 +84,9 @@ export default function Home() {
         className="absolute object-contain bottom-50 w-130 "
         draggable={false}
       />
-      <div className="justify-items-center  mx-auto  gap-1 text-white-600 absolute timer bottom-17 justify-center flex">
+      <div className="justify-items-center  mx-auto  gap-1 text-white-600 absolute timer bottom-25 justify-center flex">
         <div className="flex-1  flex-col items-center justify-center">
-          <p className="text-[50.4px] justify-center flex">
+          <p className="text-[55.4px] justify-center flex">
             {formatNumber(timeLeft.days)}
           </p>
           <p className="text-[20px] justify-center flex">DAYS</p>
