@@ -86,7 +86,7 @@ export default function Home() {
         draggable={false}
       />
 
-      <div className="justify-items-center  mx-auto  gap-1 text-white-600 absolute timer bottom-17 justify-center flex">
+      <div className="justify-items-center  mx-auto  gap-1 text-white-600 absolute timer bottom-30 md:bottom-17 justify-center flex text-3xl">
         <div className="flex-1  flex-col items-center justify-center">
           <p className="text-xl sm:text-2xl md:text-3xl lg:text-[50.4px] justify-center flex">
             {formatNumber(timeLeft.days)}
