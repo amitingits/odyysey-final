@@ -4,7 +4,7 @@ import Home from "./components/Home";
 import Games from "./components/Games";
 import Timeline from "./components/Timeline";
 import Speakers from "./components/Speaker";
-import Sponsors from "./components/Sposor";
+import Sponsors from "./components/Sponsor";
 import About from "./components/About";
 import Glimpse from "./components/Glimpse";
 import Loader from "./components/Loader";

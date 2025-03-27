@@ -16,7 +16,6 @@ export default function GameComponent({ id, title, description, link, image }) {
     return () => window.removeEventListener("resize", handleResize);
   }, []);
 
-
   return (
     <>
       {isMobile ? (
@@ -78,7 +77,9 @@ export default function GameComponent({ id, title, description, link, image }) {
                 {title}
               </h2>
               <p
-                className={`line-clamp-3 ${expanded ? "line-clamp-none" : ""} gamePara`}
+                className={`line-clamp-3 ${
+                  expanded ? "line-clamp-none" : ""
+                } gamePara`}
               >
                 {description}
               </p>
