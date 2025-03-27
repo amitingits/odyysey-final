@@ -27,7 +27,7 @@ export default function Timeline() {
           }`}
         >
           Day 2
-        </button>
+        </buttongit>
       </div>
 
       {/* Timeline Image */}
