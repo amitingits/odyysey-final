@@ -3,19 +3,21 @@ import speakersData from "./speakerData.js";
 
 export default function Speakers() {
   return (
-    <div id="speaker">
-      <h1 className="speakerTitle text-6xl mb-10">SPEAKER</h1>
-      <div className="listOfSpeakers">
-        {speakersData.map((speaker, index) => (
-          <SpeakerComponent
-            id={index}
-            key={index}
-            backgroundShape={speaker.backgroundShape}
-            personImage={speaker.personImage}
-            personName={speaker.personName}
-            designation={speaker.designation}
-          />
-        ))}
+    <div id="speaker" className="flex justify-center items-center px-20">
+      <div className=" w-full">
+        <h1 className="speakerTitle text-6xl mb-10 text-center">SPEAKER</h1>
+        <div className="grid grid-cols-3 lg:gap-[300px] md:gap-5 gap-5">
+          {speakersData.map((speaker, index) => (
+            <SpeakerComponent
+              id={index}
+              key={index}
+              backgroundShape={speaker.backgroundShape}
+              personImage={speaker.personImage}
+              personName={speaker.personName}
+              designation={speaker.designation}
+            />
+          ))}
+        </div>
       </div>
     </div>
   );

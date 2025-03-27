@@ -340,18 +340,6 @@ td {
   text-align: center;
 }
 
-.listOfSpeakers {
-  overflow-x: hidden;
-  padding: 3rem 2rem;
-  width: 100vw;
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-  justify-content: space-around;
-  gap: 200px;
-  margin-inline: auto;
-}
-
 .individualSpeaker {
   display: flex;
   flex-direction: column;

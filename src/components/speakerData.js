@@ -1,5 +1,6 @@
 import SpeakerImage1 from "../assets/SpeakerImage1.svg";
 import vishnuPillai from "../assets/vishnu-pillai.jpg";
+import sankalpKotewar from "../assets/sankalp-kotewar.jpg";
 import circle from "../assets/circle.svg";
 import Rectangle from "../assets/Rectangle.svg";
 import triangle from "../assets/triangle.svg";
@@ -13,8 +14,8 @@ const speakers = [
   },
   {
     backgroundShape: Rectangle,
-    personImage: SpeakerImage1,
-    personName: "Mr. Ashish Chakole",
+    personImage: sankalpKotewar,
+    personName: "Mr. Sankalp Kotewar",
     designation: "Designation",
   },
   {
