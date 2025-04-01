@@ -1,13 +1,13 @@
 import "./App.css";
-import Navbar from "./components/Navbar";
-import Home from "./components/Home";
-import Games from "./components/Games";
-import Timeline from "./components/Timeline";
-import Speakers from "./components/Speaker";
-import Sponsors from "./components/Sponsor";
-import About from "./components/About";
-import Glimpse from "./components/Glimpse";
-import Loader from "./components/Loader";
+import Navbar from "/src/components/Navbar";
+import Home from "/src/components/Home";
+import Games from "/src/components/Games";
+import Timeline from "/src/components/Timeline";
+import Speakers from "/src/components/Speaker";
+import Sponsors from "/src/components/Sponsor";
+import About from "/src/components/About";
+import Glimpse from "/src/components/Glimpse";
+import Loader from "/src/components/Loader";
 import { useState, useEffect } from "react";
 
 function App() {
