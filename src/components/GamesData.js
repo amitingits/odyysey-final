@@ -7,7 +7,7 @@ import memeMaker from "../assets/meme-maker.png";
 import httpsFind from "../assets/https-find.png";
 import aiOrNot from "../assets/ai-or-not.png";
 import findTheGlitch from "../assets/find-the-glitch.png";
-import aiDevelop from "../assets/aIDevelopgame.png";
+//import aiDevelop from "../assets/aIDevelopgame.png";
 import binaryCoding from "../assets/binaryCoding.png";
 import hunterGrid from "../assets/huntersgrid.png";
 import strategicTrade from "../assets/strategicTrade.jpg";
@@ -48,13 +48,13 @@ const games = [
     link: "https://qrfy.io/CJrke0OkAQ",
     image: findTheGlitch,
   },
-  {
+  /*{
     id: 6,
     title: "AI Develop",
     description: `AI Develop is an innovative game where participants design visually stunning, functional, and user-friendly web pages using advanced AI tools. Spanning two challenging levels, it tests creativity, technical expertise, and user experience. Beyond competition, it’s a platform to experiment, learn, and refine web development skills.`,
     link: "https://qrfy.io/BZBhmj8osO",
     image: aiDevelop,
-  },
+  },*/
   {
     id: 7,
     title: "Hunter’s Grid",
