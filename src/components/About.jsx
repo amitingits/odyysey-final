@@ -1,15 +1,15 @@
 import aboutimg from "../assets/about-img.svg";
 export default function About() {
   return (
-    <div className="m-1 p-1 aboutPage">
+    <div className="m-1 py-3 aboutPage">
       <h1 className="text-[30px] m-1 p-1">About</h1>
-      <h1 className="text-5xl squidFont m-1 p-1">AI ODYYSEY</h1>
-      <div className="flex about-part-1">
+      <h1 className="text-5xl squidFont m-1 p-1">AI ODYSSEY</h1>
+      <div className="flex about-part-1  mb-3 ">
         <div className="w-1/2 h-1/2 m-1 p-1 text-[18px] paragraph-div-1">
           <p>
             We are thrilled to announce the launch of AI Odyssey 2025, an event
             designed to inspire and connect individuals through innovation,
-            creativity, and technological advancement
+            creativity, and technological advancement.
           </p>
           <p className="para2">
             <br />
@@ -20,7 +20,7 @@ export default function About() {
           </p>
         </div>
         <div className=" flex w-1/2 h-1/2 justify-center p-2 aboutImage">
-          <img className="h-full" src={aboutimg} alt="img" />
+          <img className="h-3/5" src={aboutimg} alt="img" />
         </div>
       </div>
 
@@ -48,7 +48,11 @@ export default function About() {
             organizational unit committed to attaining unmatched excellence in a
             particular field. As a central hub for implementing best practices,
             conducting cutting-edge research, providing high-quality training,
-            and driving innovation, the CoE is a leader in its field.
+            and driving innovation, the CoE is a leader in its field. The CoE
+            lab is equipped with state-of-the-art tools and resources to foster
+            groundbreaking research in AI and ML, enabling students and faculty
+            to work on transformative projects that address real-world
+            challenges.
           </p>
         </div>
       </div>
