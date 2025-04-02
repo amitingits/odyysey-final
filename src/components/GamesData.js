@@ -7,7 +7,7 @@ import memeMaker from "../assets/meme-maker.png";
 import httpsFind from "../assets/https-find.png";
 import aiOrNot from "../assets/ai-or-not.png";
 import findTheGlitch from "../assets/find-the-glitch.png";
-import aiDevelop from "../assets/aIDevelopgame.png";
+import aiDevelop from "../assets/AIdevelopgame.png";
 // import binaryCoding from "../assets/binaryCoding.png";
 import hunterGrid from "../assets/huntersgrid.png";
 import strategicTrade from "../assets/strategicTrade.jpg";
