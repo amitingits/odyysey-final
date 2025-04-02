@@ -11,6 +11,7 @@ import aiDevelop from "../assets/aIDevelopgame.png";
 import binaryCoding from "../assets/binaryCoding.png";
 import hunterGrid from "../assets/huntersgrid.png";
 import strategicTrade from "../assets/strategicTrade.jpg";
+import miniHackathon from "../assets/mini-hackathon.png";
 
 const games = [
   {
@@ -18,7 +19,7 @@ const games = [
     title: "Mini Hackthon",
     description: `Hackodyssey is an exhilarating mini hackathon where participants tackle AI model development and optimization challenges. Compete in two intense rounds, building innovative solutions while showcasing creativity, problem-solving, and teamwork. Push your limits, refine your skills, and embark on an unforgettable coding adventure!`,
     link: "/miniHackathon",
-    image: SpaceCity1,
+    image: miniHackathon,
   },
   {
     id: 2,

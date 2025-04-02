@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
 import { Menu, X } from "lucide-react";
 import oddessylogo from "../assets/white-logo.svg";
+import { Link } from "react-router-dom";
 
 export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
@@ -42,7 +43,7 @@ export default function Navbar() {
           <ul className="hidden md:flex space-x-6 text-white h-17 items-center p-4  px-6 text-lg rounded-[60px] bg-[rgba(45,45,45,0.5)] backdrop-blur-md">
             <li>
               <a
-                href="#home"
+                href="/"
                 className={`hover:text-[#005ebe] ${
                   activeSection === "home" ? "text-[#005ebe]" : ""
                 }`}
@@ -60,7 +61,7 @@ export default function Navbar() {
                 Games
               </a>
             </li>
-            {/* <li>
+            <li>
               <a
                 href="#speaker"
                 className={`hover:text-[#005ebe] ${
@@ -69,7 +70,7 @@ export default function Navbar() {
               >
                 Speakers
               </a>
-            </li> */}
+            </li>
             <li>
               <a
                 href="#timeline"
@@ -81,18 +82,18 @@ export default function Navbar() {
               </a>
             </li>
             <li>
-              <a
-                href="#sponsor"
+              <Link
+                to="/leaderboard"
                 className={`hover:text-[#005ebe] ${
-                  activeSection === "sponsor" ? "text-[#005ebe]" : ""
+                  activeSection === "leaderboard" ? "text-[#005ebe]" : ""
                 }`}
               >
                 Leaderboard
-              </a>
+              </Link>
             </li>
           </ul>
 
-          <ul className="hidden md:flex space-x-6 text-white h-17 items-center p-4  text-lg rounded-[60px] bg-[rgba(45,45,45,0.5)] register h-13 backdrop-blur-md ml-2 border border-blue-500">
+          <ul className="hidden md:flex space-x-6 text-white items-center p-4  text-lg rounded-[60px] bg-[rgba(45,45,45,0.5)] register h-13 backdrop-blur-md ml-2 border border-blue-500">
             <li className="hover:text-[#005ebe]">
               <a
                 href="https://www.infivent.io/eventdetail/f4963c24-022b-4fe4-b705-193d070005f7"
@@ -143,7 +144,7 @@ export default function Navbar() {
               Games
             </a>
           </li>
-          {/* <li>
+          <li>
             <a
               href="#speaker"
               className={`block py-2 hover:text-[#005ebe] ${
@@ -153,7 +154,7 @@ export default function Navbar() {
             >
               Speakers
             </a>
-          </li> */}
+          </li>
           <li>
             <a
               href="#timeline"

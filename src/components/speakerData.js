@@ -10,7 +10,7 @@ import wasudev from "../assets/wasudev-mishra.png";
 
 const speakers = [
   {
-    backgroundShape: Rectangle,
+    backgroundShape: triangle,
     personImage: wasudev,
     personName: "Mr. Wasudev Mishra",
     designation: "CEO, ProCohat Technology Pvt. Ltd.",
@@ -22,7 +22,7 @@ const speakers = [
     designation: "Founder & CEO of Mini Data Consulting",
   },
   {
-    backgroundShape: circle,
+    backgroundShape: triangle,
     personImage: rahul,
     personName: "Mr. Rahul Karanagle.png",
     designation: "Principal Consultant and IT expert, MIHAN, Nagpur",
