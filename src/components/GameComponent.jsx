@@ -3,7 +3,14 @@ import { useEffect, useState } from "react";
 import triangleForLink from "../assets/triangleForLink.svg";
 import Rectangle from "../assets/Rectangle.svg";
 
-export default function GameComponent({ id, title, description, link, image }) {
+export default function GameComponent({
+  id,
+  title,
+  description,
+  link,
+  image,
+  guidelines,
+}) {
   const [expanded, setExpanded] = useState(false);
   const [isMobile, setIsMobile] = useState(window.innerWidth < 780);
 
@@ -89,8 +96,8 @@ export default function GameComponent({ id, title, description, link, image }) {
                 </button>
               </div>
               <Link to={link} className="flex items-center align-middle mt-4">
-                <span className="hidden md:flex space-x-6 text-white h-13 items-center p-4  text-lg rounded-[60px] bg-[rgba(45,45,45,0.5)] register h-13 transform hover:scale-110 hover:text-[#ffffff] transition-all duration-200   border border-blue-500 ">
-                  <p> View Rule Book</p>
+                <span className="hidden md:flex space-x-6 text-white items-center p-4  text-lg rounded-[60px] bg-[rgba(45,45,45,0.5)] register h-13 transform hover:scale-110 hover:text-[#ffffff] transition-all duration-200   border border-blue-500 ">
+                  {guidelines ? <p> View Guidelines</p> : <p>View Rule Book</p>}
                   <img src={triangleForLink} alt="Link Icon" className="" />
                 </span>
               </Link>

@@ -82,14 +82,14 @@ export default function Navbar() {
               </a>
             </li>
             <li>
-              <Link
+              {/* <Link
                 to="/leaderboard"
                 className={`hover:text-[#005ebe] ${
                   activeSection === "leaderboard" ? "text-[#005ebe]" : ""
                 }`}
               >
                 Leaderboard
-              </Link>
+              </Link> */}
             </li>
           </ul>
 

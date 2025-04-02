@@ -16,10 +16,11 @@ import miniHackathon from "../assets/mini-hackathon.png";
 const games = [
   {
     id: 1,
-    title: "Mini Hackthon",
+    title: "Hack Odyssey",
     description: `Hackodyssey is an exhilarating mini hackathon where participants tackle AI model development and optimization challenges. Compete in two intense rounds, building innovative solutions while showcasing creativity, problem-solving, and teamwork. Push your limits, refine your skills, and embark on an unforgettable coding adventure!`,
-    link: "/miniHackathon",
+    link: "/hackathon",
     image: miniHackathon,
+    guidelines: true,
   },
   {
     id: 2,
@@ -39,7 +40,7 @@ const games = [
     id: 4,
     title: "AI OR NOT",
     description: `AI-NOT is a super fun and interactive game where you get to guess whether a creation is made by AI or a human! As you play, you’ll earn points and have a blast competing for the top spot, all while sharpening your observation and analytical skills. Come join the fun and see how many you can get right!`,
-    link: "https://qrfy.io/e0Obzeson5",
+    link: "https://drive.google.com/file/d/1yXuxzfkQA_sFrHxUTd-b4997K3x5tQ3i/view?usp=drive_link",
     image: aiOrNot,
   },
   {

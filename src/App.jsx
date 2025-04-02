@@ -12,6 +12,7 @@ import About from "./components/About";
 import Glimpse from "./components/Glimpse";
 import Loader from "./components/Loader";
 import Leaderboard from "./components/Leaderboard";
+import Hackathon from "./components/Hackathon";
 
 function App() {
   const [loading, setLoading] = useState(true);
@@ -47,6 +48,7 @@ function App() {
               }
             />
             <Route path="/leaderboard" element={<Leaderboard />} />
+            <Route path="/hackathon" element={<Hackathon />} />
           </Routes>
         </>
       )}

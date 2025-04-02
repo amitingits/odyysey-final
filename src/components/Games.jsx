@@ -15,6 +15,7 @@ export default function Games() {
             description={game.description}
             randomShapeImage={game.randomShapeImage}
             image={game.image}
+            guidelines={game.guidelines}
           />
         ))}
       </div>
