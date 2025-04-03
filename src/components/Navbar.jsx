@@ -1,11 +1,11 @@
 import { useEffect, useState } from "react";
 import { Menu, X } from "lucide-react";
 import oddessylogo from "../assets/white-logo.svg";
-import { Link } from "react-router-dom";
+import { useLocation } from "react-router-dom";
 
-export default function Navbar() {
+export default function Navbar({ setIsAdmin }) {
   const [isOpen, setIsOpen] = useState(false);
-
+  const location = useLocation();
   const [activeSection, setActiveSection] = useState("");
 
   useEffect(() => {
@@ -26,10 +26,19 @@ export default function Navbar() {
     return () => observer.disconnect();
   }, []);
 
+  const getIn = () => {
+    const username = prompt("Enter username:");
+    const password = prompt("Enter password:");
+    if (username === "admin" && password === "password") {
+      setIsAdmin(true);
+    } else {
+      alert("Invalid credentials");
+    }
+  };
+
   return (
     <header className="fixed top-0 left-0 w-full z-50 py-4 shadow-lg">
       <nav className="flex justify-between items-center px-6 md:px-10">
-        {/* Logo */}
         <div className="flex items-center">
           <img
             src={oddessylogo}
@@ -38,9 +47,8 @@ export default function Navbar() {
           />
         </div>
 
-        {/* Desktop Menu */}
         <div className="flex">
-          <ul className="hidden md:flex space-x-6 text-white h-17 items-center p-4  px-6 text-lg rounded-[60px] bg-[rgba(45,45,45,0.5)] backdrop-blur-md">
+          <ul className="hidden md:flex space-x-6 text-white h-17 items-center p-4 px-6 text-lg rounded-[60px] bg-[rgba(45,45,45,0.5)] backdrop-blur-md">
             <li>
               <a
                 href="/"
@@ -81,32 +89,24 @@ export default function Navbar() {
                 Schedule
               </a>
             </li>
-            <li>
-              {/* <Link
-                to="/leaderboard"
-                className={`hover:text-[#005ebe] ${
-                  activeSection === "leaderboard" ? "text-[#005ebe]" : ""
-                }`}
-              >
-                Leaderboard
-              </Link> */}
-            </li>
           </ul>
 
-          <ul className="hidden md:flex space-x-6 text-white items-center p-4  text-lg rounded-[60px] bg-[rgba(45,45,45,0.5)] register h-13 backdrop-blur-md ml-2 border border-blue-500">
+          <ul className="hidden md:flex space-x-6 text-white items-center p-4 text-lg rounded-[60px] bg-[rgba(45,45,45,0.5)] register h-13 backdrop-blur-md ml-2 border border-blue-500">
             <li className="hover:text-[#005ebe]">
-              <a
-                href="https://www.infivent.io/eventdetail/f4963c24-022b-4fe4-b705-193d070005f7"
-                className=""
-                target="_blank"
-              >
-                Register Now
-              </a>
+              {location.pathname === "/leaderboard" ? (
+                <button onClick={() => getIn()}>Check In</button>
+              ) : (
+                <a
+                  href="https://www.infivent.io/eventdetail/f4963c24-022b-4fe4-b705-193d070005f7"
+                  target="_blank"
+                >
+                  Register Now
+                </a>
+              )}
             </li>
           </ul>
         </div>
 
-        {/* Mobile Menu Button */}
         <button
           className="md:hidden text-white focus:outline-none"
           onClick={() => setIsOpen(!isOpen)}
@@ -114,81 +114,6 @@ export default function Navbar() {
           {isOpen ? <X size={28} /> : <Menu size={28} />}
         </button>
       </nav>
-
-      {/* Mobile Menu */}
-      <div
-        className={`md:hidden absolute top-16 left-0 w-full bg-[rgba(44,44,44,0.9)] backdrop-blur-md py-4 text-white transition-transform duration-300 ease-in-out transform origin-top ${
-          isOpen ? "scale-y-100 opacity-100" : "scale-y-0 opacity-0"
-        }`}
-      >
-        <ul className="flex flex-col items-center space-y-4">
-          <li>
-            <a
-              href="#home"
-              className={`block py-2 hover:text-[#005ebe] ${
-                activeSection === "home" ? "text-[#005ebe]" : ""
-              }`}
-              onClick={() => setIsOpen(false)}
-            >
-              Home
-            </a>
-          </li>
-          <li>
-            <a
-              href="#game"
-              className={`block py-2 hover:text-[#005ebe] ${
-                activeSection === "game" ? "text-[#005ebe]" : ""
-              }`}
-              onClick={() => setIsOpen(false)}
-            >
-              Games
-            </a>
-          </li>
-          <li>
-            <a
-              href="#speaker"
-              className={`block py-2 hover:text-[#005ebe] ${
-                activeSection === "speaker" ? "text-[#005ebe]" : ""
-              }`}
-              onClick={() => setIsOpen(false)}
-            >
-              Speakers
-            </a>
-          </li>
-          <li>
-            <a
-              href="#timeline"
-              className={`block py-2 hover:text-[#005ebe] ${
-                activeSection === "timeline" ? "text-[#005ebe]" : ""
-              }`}
-              onClick={() => setIsOpen(false)}
-            >
-              Schedule
-            </a>
-          </li>
-          <li>
-            <a
-              href="#sponsor"
-              className={`block py-2 hover:text-[#005ebe] ${
-                activeSection === "sponsor" ? "text-[#005ebe]" : ""
-              }`}
-              onClick={() => setIsOpen(false)}
-            >
-              Leaderboard
-            </a>
-          </li>
-          <li>
-            <a
-              href="https://www.infivent.io/eventdetail/f4963c24-022b-4fe4-b705-193d070005f7"
-              target="_blank"
-              className="block py-2 hover:text-[#005ebe]"
-              onClick={() => setIsOpen(false)}
-            >
-              Register Here
-            </a>
-          </li>
-        </ul>
-      </div>
     </header>
   );
 }

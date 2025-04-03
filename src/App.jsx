@@ -15,6 +15,7 @@ import Hackathon from "./components/Hackathon";
 
 function App() {
   const [loading, setLoading] = useState(true);
+  const [isAdmin, setIsAdmin] = useState(false);
 
   useEffect(() => {
     const timer = setTimeout(() => {
@@ -30,7 +31,7 @@ function App() {
         <Loader />
       ) : (
         <>
-          <Navbar />
+          <Navbar isAdmin={isAdmin} setIsAdmin={setIsAdmin} />
           <Routes>
             <Route
               path="/"
@@ -46,7 +47,10 @@ function App() {
                 </>
               }
             />
-            <Route path="/leaderboard" element={<Leaderboard />} />
+            <Route
+              path="/leaderboard"
+              element={<Leaderboard isAdmin={isAdmin} />}
+            />
             <Route path="/hackathon" element={<Hackathon />} />
           </Routes>
         </>
