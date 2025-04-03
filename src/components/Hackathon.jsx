@@ -1,7 +1,13 @@
 import ThreeDCard from "../components/ThreeDCard";
 import { AnimatePresence } from "framer-motion";
+import { useEffect } from "react";
 
 export default function Hackotsav() {
+
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
+  
   const cardData = [
     {
       title: "AIML",
