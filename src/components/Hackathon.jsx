@@ -21,12 +21,12 @@ export default function Hackotsav() {
       linkText: " ",
       linkUrl: "https://ai-innovations.com",
     },
-    {
-      title: "Web3 & Blockchain",
-      description: "Unlock the potential of decentralized technologies.",
-      linkText: " ",
-      linkUrl: "https://web3future.com",
-    },
+    // {
+    //   title: "Web3 & Blockchain",
+    //   description: "Unlock the potential of decentralized technologies.",
+    //   linkText: " ",
+    //   linkUrl: "https://web3future.com",
+    // },
     {
       title: "DevOps",
       description: "Streamline your development and operations.",

@@ -342,68 +342,68 @@ const cards = [
     },
   ],
   //WEB3 and Blockchain
-  [
-    {
-      description:
-        "Design a blockchain system to securely store and verify academic records.",
-      title: "Blockchain Academic Records",
-      ctaLink: "https://github.com",
-      content: () => (
-        <p>
-          Use smart contracts to automate record verification processes,
-          ensuring transparency and authenticity.
-        </p>
-      ),
-    },
-    {
-      description:
-        "Decentralized platform for online learning with NFT-based courses.",
-      title: "NFT Learning Marketplace",
-      ctaLink: "https://github.com",
-      content: () => (
-        <p>
-          Students can buy, sell, and trade educational content using blockchain
-          technology for secure ownership.
-        </p>
-      ),
-    },
-    {
-      description:
-        "NLP chatbot for decentralized platforms, enhancing user interaction.",
-      title: "Blockchain NLP Chatbot",
-      ctaLink: "https://github.com",
-      content: () => (
-        <p>
-          Uses NLP for chatbot development and blockchain for secure data
-          storage, improving decentralized support.
-        </p>
-      ),
-    },
-    {
-      description:
-        "Blockchain-based identity verification to protect against phishing attacks.",
-      title: "Decentralized Identity Verification",
-      ctaLink: "https://github.com",
-      content: () => (
-        <p>
-          Implements smart contracts and authentication methods to enhance
-          security in Web3 environments.
-        </p>
-      ),
-    },
-    {
-      description:
-        "Decentralized education platform with AI-assisted personalized learning.",
-      title: "AI-Driven Learning in Web3",
-      ctaLink: "https://github.com",
-      content: () => (
-        <p>
-          Implements AI for adaptive learning paths and blockchain for secure
-          data storage, enhancing education.
-        </p>
-      ),
-    },
-  ],
+  // [
+  //   {
+  //     description:
+  //       "Design a blockchain system to securely store and verify academic records.",
+  //     title: "Blockchain Academic Records",
+  //     ctaLink: "https://github.com",
+  //     content: () => (
+  //       <p>
+  //         Use smart contracts to automate record verification processes,
+  //         ensuring transparency and authenticity.
+  //       </p>
+  //     ),
+  //   },
+  //   {
+  //     description:
+  //       "Decentralized platform for online learning with NFT-based courses.",
+  //     title: "NFT Learning Marketplace",
+  //     ctaLink: "https://github.com",
+  //     content: () => (
+  //       <p>
+  //         Students can buy, sell, and trade educational content using blockchain
+  //         technology for secure ownership.
+  //       </p>
+  //     ),
+  //   },
+  //   {
+  //     description:
+  //       "NLP chatbot for decentralized platforms, enhancing user interaction.",
+  //     title: "Blockchain NLP Chatbot",
+  //     ctaLink: "https://github.com",
+  //     content: () => (
+  //       <p>
+  //         Uses NLP for chatbot development and blockchain for secure data
+  //         storage, improving decentralized support.
+  //       </p>
+  //     ),
+  //   },
+  //   {
+  //     description:
+  //       "Blockchain-based identity verification to protect against phishing attacks.",
+  //     title: "Decentralized Identity Verification",
+  //     ctaLink: "https://github.com",
+  //     content: () => (
+  //       <p>
+  //         Implements smart contracts and authentication methods to enhance
+  //         security in Web3 environments.
+  //       </p>
+  //     ),
+  //   },
+  //   {
+  //     description:
+  //       "Decentralized education platform with AI-assisted personalized learning.",
+  //     title: "AI-Driven Learning in Web3",
+  //     ctaLink: "https://github.com",
+  //     content: () => (
+  //       <p>
+  //         Implements AI for adaptive learning paths and blockchain for secure
+  //         data storage, enhancing education.
+  //       </p>
+  //     ),
+  //   },
+  // ],
   //Cyber
   [
     {

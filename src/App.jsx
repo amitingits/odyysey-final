@@ -1,7 +1,6 @@
 import "./App.css";
 import { Routes, Route } from "react-router-dom"; // ❌ No BrowserRouter here
 import { useState, useEffect } from "react";
-
 import Navbar from "./components/Navbar";
 import Home from "./components/Home";
 import Games from "./components/Games";
